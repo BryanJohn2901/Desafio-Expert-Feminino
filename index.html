@@ -1,0 +1,1488 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth overflow-x-hidden">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Primary -->
+    <title>Desafio Expert em Treino Feminino | 2 Dias Ao Vivo com Garon, Krause e Lund</title>
+    <meta name="description" content="Aprenda a prescrever para o corpo feminino de verdade. 2 dias ao vivo com os maiores especialistas em treinamento feminino do Brasil. Ciclo menstrual, biomecânica e fisiologia aplicados ao treino. Por R$19,90.">
+    <meta name="keywords" content="treinamento feminino, personal trainer, ciclo menstrual treino, prescrição para mulheres, educação física feminina, desafio expert feminino, PTA, Carlos Garon, Walter Krause, Rafa Lund">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Personal Trainer Academy">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Desafio Expert em Treino Feminino | 2 Dias Ao Vivo">
+    <meta property="og:description" content="2 dias com os maiores especialistas em treinamento feminino do Brasil. Aprenda a prescrever para o corpo feminino de verdade — ciclo, hormônios, biomecânica. Por R$19,90.">
+    <meta property="og:image" content="img/og-image.jpg">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Desafio Expert em Treino Feminino | 2 Dias Ao Vivo">
+    <meta name="twitter:description" content="2 dias com os maiores especialistas em treinamento feminino do Brasil. Por R$19,90.">
+    <meta name="twitter:image" content="img/og-image.jpg">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://desafioexpertfeminino.com.br/">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            bg: '#0A070D',
+                            surface: '#15111A',
+                            primary: '#DB1860',
+                            primaryHover: '#BE123C',
+                            accent: '#9333EA',
+                            purple: '#9972B5',
+                            lilac: '#9A72B4',
+                            teal: '#243839',
+                            textPrimary: '#FFFFFF',
+                            textSecondary: '#D0D5DD',
+                            textMuted: '#98A2B3',
+                            border: 'rgba(255, 255, 255, 0.08)'
+                        }
+                    },
+                    maxWidth: { 'site': '1300px', 'site-md': '1040px', 'site-sm': '860px' },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Oswald', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'shimmer': 'shimmer 2s infinite',
+                        'blink': 'blink 1.5s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        shimmer: { '100%': { transform: 'translateX(100%)' } },
+                        blink: {
+                            '0%, 100%': { opacity: '1' },
+                            '50%': { opacity: '0.2' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .glass-strong {
+            background: rgba(21, 17, 26, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        @media (min-width: 1024px) {
+            body {
+                cursor: none;
+            }
+
+            a,
+            button,
+            input,
+            select,
+            textarea {
+                cursor: none !important;
+            }
+        }
+
+        .custom-cursor {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 36px;
+            height: 36px;
+            border: 1px solid rgba(219, 24, 96, 0.5);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+            transition: width 0.3s, height 0.3s, background-color 0.3s, border-color 0.3s;
+        }
+
+        .custom-cursor-dot {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 6px;
+            height: 6px;
+            background-color: #DB1860;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 10000;
+            transform: translate(-50%, -50%);
+        }
+
+        .custom-cursor.hover {
+            width: 55px;
+            height: 55px;
+            background-color: rgba(219, 24, 96, 0.1);
+        }
+
+        /* Grid texture */
+        .bg-grid {
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px);
+            background-size: 56px 56px;
+        }
+
+        /* Glow blobs */
+        .blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(100px);
+            pointer-events: none;
+        }
+
+        /* Gradient border card */
+        .card-gb {
+            position: relative;
+            background: rgba(21, 17, 26, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+
+        .card-gb::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            padding: 1px;
+            background: linear-gradient(135deg, rgba(219, 24, 96, 0.45), rgba(147, 51, 234, 0.15), rgba(255, 255, 255, 0.04));
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+
+        /* Card hover lift */
+        .card-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 24px 60px rgba(219, 24, 96, 0.1);
+        }
+
+        /* Shine button */
+        .btn-shine {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-shine::after {
+            content: '';
+            position: absolute;
+            top: -60%;
+            left: -75%;
+            width: 50%;
+            height: 220%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.18), transparent);
+            transform: skewX(-20deg);
+            transition: left 0.7s ease;
+        }
+
+        .btn-shine:hover::after {
+            left: 125%;
+        }
+
+        /* FAQ accordion */
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+
+        .faq-answer.open {
+            max-height: 400px;
+        }
+
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.open .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        /* Mobile floating CTA */
+        .mobile-float {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 10px 16px 20px;
+            background: linear-gradient(to top, rgba(10, 7, 13, 1) 55%, transparent);
+            z-index: 80;
+        }
+
+        /* Premium grain texture */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            z-index: 9997;
+            pointer-events: none;
+            opacity: 0.028;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='256' height='256' filter='url(%23n)'/%3E%3C/svg%3E");
+            background-size: 256px 256px;
+        }
+
+        /* Section label with decorative lines */
+        .label-deco {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .label-deco::before,
+        .label-deco::after {
+            content: '';
+            display: block;
+            width: 22px;
+            height: 1px;
+            background: #DB1860;
+            opacity: 0.45;
+            flex-shrink: 0;
+        }
+
+        /* Scroll hint animation */
+        @keyframes scroll-bounce {
+            0%, 100% { transform: translateY(0); opacity: 0.5; }
+            50% { transform: translateY(8px); opacity: 1; }
+        }
+        .scroll-hint {
+            animation: scroll-bounce 2.2s ease-in-out infinite;
+        }
+
+        /* Gradient divider between sections */
+        .gradient-rule {
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(255,255,255,0.07), transparent);
+            border: none;
+        }
+
+        /* Improved card glow on hover */
+        .card-glow:hover {
+            box-shadow: 0 0 0 1px rgba(219, 24, 96, 0.18), 0 24px 64px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Footer link */
+        footer a {
+            color: #98A2B3;
+            transition: color 0.2s;
+        }
+        footer a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body class="bg-brand-bg text-brand-textPrimary font-sans antialiased selection:bg-brand-primary selection:text-white overflow-x-hidden">
+
+    <div class="custom-cursor hidden lg:block" id="cursor"></div>
+    <div class="custom-cursor-dot hidden lg:block" id="cursor-dot"></div>
+
+    <!-- Mobile floating CTA -->
+    <div class="mobile-float lg:hidden">
+        <button type="button" onclick="abrirPopup()"
+            class="btn-shine w-full bg-brand-primary hover:bg-brand-primaryHover text-white font-black uppercase py-4 rounded-sm transition shadow-[0_0_30px_rgba(219,24,96,0.5)] text-sm border-0 flex items-center justify-center gap-2">
+            GARANTIR MINHA VAGA POR R$19,90 <i class="fas fa-arrow-right"></i>
+        </button>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav id="main-nav" class="fixed top-4 left-0 right-0 z-50 px-4 hidden md:block" data-aos="fade-down"
+        data-aos-duration="1000">
+        <div class="container mx-auto max-w-[860px]">
+            <div
+                class="flex items-center justify-between gap-2 px-4 py-2.5 lg:px-7 lg:py-3 rounded-sm border border-white/15 bg-slate-950/35 backdrop-blur-md shadow-[0_8px_24px_rgba(0,0,0,0.25)] transition-all duration-300">
+                <a href="#home" class="shrink-0 hover:opacity-80 transition-opacity">
+                    <img src="assets/logoPTA.svg" alt="Personal Trainer Academy" class="h-9 lg:h-10 w-auto">
+                </a>
+                <div class="hidden md:flex items-center gap-6 lg:gap-9">
+                    <a href="#metodo"
+                        class="text-[11px] font-bold uppercase tracking-[0.14em] text-slate-300 hover:text-white transition-colors">O
+                        Método</a>
+                    <a href="#modulos"
+                        class="text-[11px] font-bold uppercase tracking-[0.14em] text-slate-300 hover:text-white transition-colors">Módulos</a>
+                    <a href="#bonus"
+                        class="text-[11px] font-bold uppercase tracking-[0.14em] text-slate-300 hover:text-white transition-colors">Especialistas</a>
+                </div>
+                <button type="button" onclick="abrirPopup()"
+                    class="btn-shine py-2.5 px-5 md:py-3 md:px-7 rounded-sm sm:rounded-sm font-black uppercase tracking-[0.12em] text-xs md:text-sm border-0 bg-brand-primary hover:bg-brand-primaryHover text-white transition-all hover:-translate-y-0.5 shadow-[0_0_16px_rgba(219,24,96,0.3)] hover:shadow-[0_0_28px_rgba(219,24,96,0.5)] shrink-0">Inscreva-se</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 01 — Hero -->
+    <header id="home" class="relative min-h-screen flex items-center mt-0 md:mt-20 pt-20 md:pt-12 pb-24 overflow-hidden bg-brand-bg">
+    <!-- Background e Elementos Visuais -->
+    <div class="absolute inset-0 z-0">
+        <picture>
+            <source media="(max-width: 767px)" srcset="img/LUND-1%20(1).png">
+            <img src="img/lund%20(1).png" alt="Fundo Treinamento Feminino" class="w-full h-full object-cover opacity-15 grayscale" loading="eager">
+        </picture>
+        <div class="absolute inset-0 bg-gradient-to-b from-brand-bg/40 via-brand-bg/75 to-brand-bg"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-brand-bg via-brand-bg/90 to-transparent hidden lg:block"></div>
+    </div>
+
+    <!-- Blobs de Luz / Glow de Fundo -->
+    <div class="absolute top-1/4 -left-48 w-[600px] h-[600px] bg-brand-primary/15 rounded-full blur-[140px] pointer-events-none z-0"></div>
+    <div class="absolute top-1/2 -right-48 w-[500px] h-[500px] bg-brand-purple/15 rounded-full blur-[140px] pointer-events-none z-0"></div>
+    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-brand-primary/8 rounded-full blur-[120px] pointer-events-none z-0"></div>
+
+    <div class="container mx-auto px-6 relative z-10 max-w-site">
+        <div class="max-w-4xl space-y-8 text-center lg:text-left mx-auto lg:mx-0" data-aos="fade-up">
+            
+            <!-- Logo Hero -->
+            <div class="flex justify-center lg:justify-start">
+                <img src="assets/5.svg" alt="Desafio Expert Feminino" class="h-20 md:h-24 w-auto">
+            </div>
+
+            <!-- Tag de Identificação Otimizada -->
+            <div class="inline-flex items-center gap-x-2 px-4 py-2 rounded-sm border border-brand-primary/30 bg-brand-primary/5 backdrop-blur-md shadow-[0_4px_20px_rgba(219,24,96,0.15)] mx-auto lg:mx-0">
+                <span class="w-2 h-2 rounded-full bg-brand-primary shrink-0 animate-pulse"></span>
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-primary whitespace-nowrap">Desafio · 2 dias ao vivo</span>
+            </div>
+
+            <!-- Headline Limpa (Sem itálico) -->
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-[1.1] text-white tracking-tight">
+                2 dias com os maiores especialistas em <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary via-rose-400 to-brand-accent font-extrabold">treino feminino do Brasil.</span>
+            </h1>
+
+            <!-- Subheadline -->
+            <p class="text-base sm:text-lg md:text-xl text-brand-textSecondary max-w-3xl leading-relaxed font-medium mx-auto lg:mx-0">
+                A mulher <span class="text-brand-primary font-semibold">não é um homem menor</span>. E treinar ela como se fosse é o <span class="text-brand-primary font-semibold">erro que está travando os resultados</span> das suas alunas e a sua carreira.
+            </p>
+
+            <!-- Destaque para Data, Local e Preço -->
+            <div class="flex flex-col lg:flex-row items-stretch justify-center lg:justify-start gap-4 pt-2">
+                <!-- Preço — aparece primeiro (esquerda no desktop, topo no mobile) -->
+                <div class="flex items-center justify-center bg-gradient-to-r from-brand-primary/20 to-brand-accent/20 border-2 border-brand-primary/60 rounded-sm px-6 py-3 backdrop-blur-md shadow-[0_0_30px_rgba(219,24,96,0.35)] animate-pulse-slow w-full sm:w-auto">
+                    <div class="text-left mr-4">
+                        <span class="block text-[9px] uppercase font-black tracking-widest text-brand-textMuted leading-none">Acesso Total</span>
+                        <span class="text-xs font-medium text-brand-textSecondary line-through">De R$ 97,00</span>
+                    </div>
+                    <div class="text-3xl font-black text-white tracking-tight leading-none flex items-baseline">
+                        <span class="text-xs font-bold text-brand-primary mr-1">R$</span>19,90
+                    </div>
+                </div>
+
+                <!-- Info — aparece depois (direita no desktop, baixo no mobile) -->
+                <div class="flex flex-wrap items-center justify-center gap-3 bg-white/[0.03] border border-white/10 rounded-sm p-2.5 sm:p-3 backdrop-blur-md shadow-xl w-full sm:w-auto">
+                    <span class="px-4 py-2.5 rounded-sm bg-brand-surface border border-white/5 text-xs font-bold text-white flex items-center gap-2">
+                        <i class="fas fa-calendar-alt text-brand-primary text-sm"></i> Sábado e Domingo
+                    </span>
+                    <span class="px-4 py-2.5 rounded-sm bg-brand-surface border border-white/5 text-xs font-bold text-white flex items-center gap-2">
+                        <i class="fas fa-clock text-brand-primary text-sm"></i> 9h e 14h
+                    </span>
+                    <span class="px-4 py-2.5 rounded-sm bg-brand-surface border border-white/5 text-xs font-bold text-white flex items-center gap-2">
+                        <i class="fas fa-video text-brand-primary text-sm"></i> Online e ao vivo
+                    </span>
+                </div>
+            </div>
+
+            <!-- Botão de Ação CTA Otimizado -->
+            <div class="pt-4 flex flex-col items-center lg:items-start">
+                <button type="button" onclick="abrirPopup()"
+                    class="group relative w-full sm:w-auto inline-flex bg-brand-primary hover:bg-brand-primaryHover text-white font-black uppercase tracking-wider py-5 px-12 rounded-sm transition-all duration-300 shadow-[0_12px_40px_rgba(219,24,96,0.5)] hover:shadow-[0_15px_60px_rgba(219,24,96,0.75)] hover:-translate-y-1 items-center justify-center gap-3 border-0 text-sm md:text-base cursor-pointer overflow-hidden">
+                    <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
+                    <span>GARANTIR MINHA VAGA POR R$ 19,90</span> 
+                    <i class="fas fa-arrow-right text-sm transition-transform duration-300 group-hover:translate-x-1"></i>
+                </button>
+            </div>
+
+            <!-- Grid de Mini Stats Integrado -->
+            <div class="pt-8 border-t border-white/5 max-w-md mx-auto lg:mx-0">
+                <div class="grid grid-cols-3 gap-4 rounded-sm bg-white/[0.02] border border-white/5 backdrop-blur-sm p-2 shadow-inner">
+                    <div class="text-center py-3 px-4 border-r border-white/5">
+                        <p class="text-2xl sm:text-3xl font-black text-white leading-none">4k<span class="text-brand-primary font-bold">+</span></p>
+                        <p class="text-[10px] text-brand-textMuted uppercase font-bold tracking-widest mt-1.5">Formados</p>
+                    </div>
+                    <div class="text-center py-3 px-4 border-r border-white/5">
+                        <p class="text-2xl sm:text-3xl font-black text-white leading-none">8ª</p>
+                        <p class="text-[10px] text-brand-textMuted uppercase font-bold tracking-widest mt-1.5">Turma</p>
+                    </div>
+                    <div class="text-center py-3 px-4">
+                        <p class="text-2xl sm:text-3xl font-black text-white leading-none">100<span class="text-brand-primary font-bold">%</span></p>
+                        <p class="text-[10px] text-brand-textMuted uppercase font-bold tracking-widest mt-1.5">Ao Vivo</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 hidden lg:flex flex-col items-center gap-2 scroll-hint z-10">
+        <span class="text-[10px] uppercase tracking-widest text-brand-textMuted font-bold">Role para baixo</span>
+        <div class="w-5 h-8 rounded-full border border-white/20 flex items-start justify-center p-1">
+            <div class="w-1 h-2 rounded-full bg-brand-primary animate-bounce"></div>
+        </div>
+    </div>
+    </header>
+
+    <!-- 02 — Barra de Credibilidade -->
+    <section id="credibilidade" class="relative z-20 border-y border-white/5 bg-brand-surface/80 py-16 overflow-hidden">
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.01)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.01)_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[150px] bg-brand-primary/5 rounded-full blur-[100px] pointer-events-none"></div>
+
+    <div class="container mx-auto px-6 max-w-site relative z-10">
+        <!-- Grid de Indicadores de Alta Performance -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 text-center mb-12">
+            
+            <!-- Card 1 -->
+            <div class="relative group p-6 rounded-sm bg-white/[0.02] border border-white/5 shadow-inner transition-all duration-300 hover:border-brand-primary/20 hover:bg-white/[0.04] overflow-hidden" data-aos="fade-up">
+                <div class="absolute -right-2 -top-4 text-7xl font-black text-stroke opacity-[0.03] select-none pointer-events-none">8</div>
+                <div class="flex items-center justify-center w-12 h-12 rounded-sm bg-brand-primary/10 border border-brand-primary/20 mx-auto mb-4 text-brand-primary transition-transform duration-300 group-hover:scale-110">
+                    <i class="fas fa-graduation-cap text-lg"></i>
+                </div>
+                <h3 class="text-3xl md:text-4xl font-black text-white tracking-tight">
+                    8ª<span class="text-brand-primary font-bold">+</span>
+                </h3>
+                <p class="text-xs text-brand-textMuted uppercase font-bold tracking-widest mt-2 max-w-[200px] mx-auto leading-relaxed">
+                    Turma da Pós em andamento
+                </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="relative group p-6 rounded-sm bg-white/[0.02] border border-white/5 shadow-inner transition-all duration-300 hover:border-brand-primary/20 hover:bg-white/[0.04] overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                <div class="absolute -right-2 -top-4 text-7xl font-black text-stroke opacity-[0.03] select-none pointer-events-none">4K</div>
+                <div class="flex items-center justify-center w-12 h-12 rounded-sm bg-brand-primary/10 border border-brand-primary/20 mx-auto mb-4 text-brand-primary transition-transform duration-300 group-hover:scale-110">
+                    <i class="fas fa-user-check text-lg"></i>
+                </div>
+                <h3 class="text-3xl md:text-4xl font-black text-white tracking-tight">
+                    4k<span class="text-brand-primary font-bold">+</span>
+                </h3>
+                <p class="text-xs text-brand-textMuted uppercase font-bold tracking-widest mt-2 max-w-[200px] mx-auto leading-relaxed">
+                    Profissionais já formados
+                </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="relative group p-6 rounded-sm bg-white/[0.02] border border-white/5 shadow-inner transition-all duration-300 hover:border-brand-primary/20 hover:bg-white/[0.04] overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                <div class="absolute -right-2 -top-4 text-7xl font-black text-stroke opacity-[0.03] select-none pointer-events-none">100</div>
+                <div class="flex items-center justify-center w-12 h-12 rounded-sm bg-brand-primary/10 border border-brand-primary/20 mx-auto mb-4 text-brand-primary transition-transform duration-300 group-hover:scale-110">
+                    <i class="fas fa-broadcast-tower text-lg"></i>
+                </div>
+                <h3 class="text-3xl md:text-4xl font-black text-white tracking-tight">
+                    100<span class="text-brand-primary font-bold">%</span>
+                </h3>
+                <p class="text-xs text-brand-textMuted uppercase font-bold tracking-widest mt-2 max-w-[200px] mx-auto leading-relaxed">
+                    Especialistas ao vivo
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Bloco de Conversão Master -->
+        <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+            <button type="button" onclick="abrirPopup()"
+                class="group relative inline-flex items-center justify-center overflow-hidden rounded-sm bg-brand-primary hover:bg-brand-primaryHover text-white font-black uppercase tracking-wider py-5 px-10 transition-all duration-300 shadow-[0_10px_30px_rgba(219,24,96,0.4)] hover:shadow-[0_15px_40px_rgba(219,24,96,0.6)] hover:-translate-y-1 cursor-pointer border-0 text-sm md:text-base">
+                <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
+                <span>QUERO FAZER PARTE DESSA TURMA</span>
+                <i class="fas fa-arrow-right text-sm ml-2 transition-transform duration-300 group-hover:translate-x-1"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+    <!-- 03 — Seção de Dor -->
+    <section id="dor" class="py-24 relative overflow-hidden bg-brand-bg">
+    <!-- Blobs decorativos e iluminação ambiente de fundo -->
+    <div class="absolute top-1/2 -right-32 w-[450px] h-[450px] bg-brand-primary/10 rounded-full blur-[140px] pointer-events-none z-0"></div>
+    <div class="absolute bottom-1/4 -left-32 w-[350px] h-[350px] bg-brand-teal/20 rounded-full blur-[120px] pointer-events-none z-0"></div>
+
+    <div class="container mx-auto px-6 max-w-site-md relative z-10">
+        
+        <!-- Cabeçalho de Dor Estratégico -->
+        <div class="text-center mb-16" data-aos="fade-up">
+            <p class="text-brand-primary font-extrabold uppercase tracking-[0.2em] text-xs sm:text-sm mb-4 label-deco">
+                Você se reconhece aqui?
+            </p>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-white leading-tight tracking-tight max-w-3xl mx-auto">
+                Você atende mulheres. Mas provavelmente nunca foi treinado para isso de verdade.
+            </h2>
+        </div>
+
+        <!-- Narrativa de Quebra de Objeção -->
+        <div class="space-y-6 text-brand-textSecondary leading-relaxed text-base sm:text-lg mb-12 max-w-3xl mx-auto text-center lg:text-left" data-aos="fade-up" data-aos-delay="100">
+            <p>
+                A faculdade ensinou <span class="text-brand-primary font-semibold">anatomia, fisiologia e biomecânica</span>. Mas ela ensinou tudo isso desenhado para um <span class="text-brand-primary font-semibold">corpo neutro</span> que, no fundo, sempre foi estruturado sob o <span class="text-brand-primary font-semibold">padrão masculino</span>.
+            </p>
+            <p>
+                Quando sua aluna chega com <span class="text-brand-primary font-semibold">dores articulares</span>, <span class="text-brand-primary font-semibold">estagnação estética</span> ou com aquela nítida sensação de que está fazendo tudo certo e mesmo assim não evolui... a <span class="text-brand-primary font-semibold">insegurança</span> aparece. É aí que você acaba ajustando o <span class="text-brand-primary font-semibold">volume e a intensidade</span> apenas no <span class="text-brand-primary font-semibold">feeling</span>, torcendo para dar certo e sem entender o real motivo do <span class="text-brand-primary font-semibold">bloqueio biológico</span>.
+            </p>
+        </div>
+
+        <!-- Grid de Sintomas / Problemas Reais do Profissional -->
+        <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12" data-aos="fade-up" data-aos-delay="200">
+            <li class="group flex gap-4 items-center p-5 rounded-sm glass-strong border border-white/5 transition-all duration-300 hover:border-brand-primary/30 hover:bg-white/[0.04]">
+                <span class="w-8 h-8 rounded-sm bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
+                    <i class="fas fa-times text-brand-primary text-sm"></i>
+                </span>
+                <span class="text-brand-textSecondary text-sm font-semibold transition-colors group-hover:text-white">
+                    Você prescreve o mesmo volume independente da fase do ciclo da aluna.
+                </span>
+            </li>
+            
+            <li class="group flex gap-4 items-center p-5 rounded-sm glass-strong border border-white/5 transition-all duration-300 hover:border-brand-primary/30 hover:bg-white/[0.04]">
+                <span class="w-8 h-8 rounded-sm bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
+                    <i class="fas fa-times text-brand-primary text-sm"></i>
+                </span>
+                <span class="text-brand-textSecondary text-sm font-semibold transition-colors group-hover:text-white">
+                    Você não sabe ao certo por que ela sumiu do treino naquela semana específica.
+                </span>
+            </li>
+            
+            <li class="group flex gap-4 items-center p-5 rounded-sm glass-strong border border-white/5 transition-all duration-300 hover:border-brand-primary/30 hover:bg-white/[0.04]">
+                <span class="w-8 h-8 rounded-sm bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
+                    <i class="fas fa-times text-brand-primary text-sm"></i>
+                </span>
+                <span class="text-brand-textSecondary text-sm font-semibold transition-colors group-hover:text-white">
+                    Você já ajustou o treino no feeling porque o resultado simplesmente não vinha.
+                </span>
+            </li>
+            
+            <li class="group flex gap-4 items-center p-5 rounded-sm glass-strong border border-white/5 transition-all duration-300 hover:border-brand-primary/30 hover:bg-white/[0.04]">
+                <span class="w-8 h-8 rounded-sm bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
+                    <i class="fas fa-times text-brand-primary text-sm"></i>
+                </span>
+                <span class="text-brand-textSecondary text-sm font-semibold transition-colors group-hover:text-white">
+                    Você já se perguntou se o problema era a aluna, quando na verdade era a prescrição.
+                </span>
+            </li>
+            
+            <li class="group md:col-span-2 flex gap-4 items-center p-5 rounded-sm glass-strong border border-white/5 transition-all duration-300 hover:border-brand-primary/30 hover:bg-white/[0.04]">
+                <span class="w-8 h-8 rounded-sm bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
+                    <i class="fas fa-times text-brand-primary text-sm"></i>
+                </span>
+                <span class="text-brand-textSecondary text-sm font-semibold transition-colors group-hover:text-white">
+                    Você deseja se tornar a maior autoridade da sua região em treinamento feminino, mas ainda não compreende quais habilidades faltam para fechar esse gap de mercado.
+                </span>
+            </li>
+        </ul>
+
+        <!-- Bloco de Conclusão / Alívio com Destaque -->
+        <div class="relative rounded-sm border border-white/10 bg-gradient-to-r from-brand-surface to-brand-bg p-6 text-center shadow-2xl max-w-3xl mx-auto mb-12" data-aos="fade-up" data-aos-delay="250">
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-0.5 bg-gradient-to-r from-transparent via-brand-primary to-transparent"></div>
+            <p class="text-white font-bold text-base sm:text-lg">
+                Você não está errando por falta de dedicação. Está errando por falta de uma leitura biológica e hormonal que ninguém nunca te ensinou.
+            </p>
+        </div>
+
+        <!-- CTA de Resgate Dinâmico -->
+        <div class="text-center space-y-4" data-aos="fade-up" data-aos-delay="300">
+            <button type="button" onclick="abrirPopup()"
+                class="group relative w-full sm:w-auto inline-flex bg-brand-primary hover:bg-brand-primaryHover text-white font-black uppercase tracking-wider py-5 px-12 rounded-sm transition-all duration-300 shadow-[0_12px_40px_rgba(219,24,96,0.4)] hover:shadow-[0_15px_50px_rgba(219,24,96,0.65)] hover:-translate-y-1 items-center justify-center gap-3 border-0 text-sm md:text-base cursor-pointer overflow-hidden">
+                <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
+                <span>QUERO PARAR DE ADIVINHAR</span>
+                <i class="fas fa-arrow-right text-sm transition-transform duration-300 group-hover:translate-x-1"></i>
+            </button>
+            <p class="text-xs text-brand-textMuted font-medium tracking-wide">
+                Apenas R$ 19,90 no lote promocional para fechar essa lacuna profissional de vez.
+            </p>
+        </div>
+        
+    </div>
+</section>
+
+    <!-- 04 — Método -->
+    <section id="metodo" class="py-24 bg-brand-surface border-y border-white/5 relative overflow-hidden">
+    <!-- Blur Blobs e Iluminação de Fundo Premium -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-brand-accent/8 rounded-full blur-[120px] pointer-events-none z-0"></div>
+    
+    <div class="container mx-auto px-6 max-w-site-md relative z-10">
+        <!-- Cabeçalho de Bloco Otimizado (Sem Itálicos) -->
+        <div class="text-center mb-16" data-aos="fade-up">
+            <p class="text-brand-primary font-extrabold uppercase tracking-[0.2em] text-xs sm:text-sm mb-4 label-deco">
+                O que muda quando você entende o corpo feminino
+            </p>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-white leading-tight tracking-tight">
+                A diferença não está no exercício. Está na leitura.
+            </h2>
+        </div>
+
+        <!-- Narrativa de Conversão com Tipografia Escaneável -->
+        <div class="space-y-6 text-brand-textSecondary leading-relaxed text-base sm:text-lg mb-12 text-center lg:text-left font-medium" data-aos="fade-up" data-aos-delay="100">
+            <p>
+                Profissionais que entendem o corpo feminino de verdade não prescrevem mais. <span class="text-brand-primary font-semibold">Prescrevem melhor.</span>
+            </p>
+            <p>
+                Eles sabem que a aluna que sumiu na semana antes da menstruação não é fraca: é a <span class="text-brand-primary font-semibold">fisiologia agindo</span>. Sabem que a mulher que não emagrece mesmo fazendo tudo certo provavelmente enfrenta um <span class="text-brand-primary font-semibold">desafio hormonal</span> que a <span class="text-brand-primary font-semibold">prescrição comum simplesmente ignora</span>. Compreendem que um <span class="text-brand-primary font-semibold">desvio biomecânico sutil</span>, no corpo feminino, gera um impacto mecânico e articular completamente diferente do que causaria no corpo masculino.
+            </p>
+            <p>
+                Esta capacidade técnica de interpretação é o <span class="text-brand-primary font-semibold">divisor de águas</span> que separa o profissional comum que apenas atende mulheres do verdadeiro <span class="text-brand-primary font-semibold">expert em treinamento feminino</span>. E é exatamente esta competência analítica que você vai desenvolver ao longo destes <span class="text-brand-primary font-semibold">2 dias</span>.
+            </p>
+        </div>
+
+        <!-- CTA de Conversão com Efeito Glow e Shimmer Otimizado -->
+        <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+            <button type="button" onclick="abrirPopup()"
+                class="group relative w-full sm:w-auto inline-flex bg-brand-primary hover:bg-brand-primaryHover text-white font-black uppercase tracking-wider py-5 px-10 rounded-sm transition-all duration-300 shadow-[0_12px_40px_rgba(219,24,96,0.4)] hover:shadow-[0_15px_50px_rgba(219,24,96,0.65)] hover:-translate-y-1 items-center justify-center gap-3 border-0 text-sm md:text-base cursor-pointer overflow-hidden">
+                <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
+                <span>QUERO DESENVOLVER ESSA LEITURA</span>
+                <i class="fas fa-arrow-right text-sm transition-transform duration-300 group-hover:translate-x-1"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+    <!-- 05 — Para Quem É -->
+    <section id="para-quem" class="py-24 relative overflow-hidden bg-brand-bg">
+    <!-- Blobs e efeitos de iluminação de fundo -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-brand-accent/5 rounded-full blur-[130px] pointer-events-none z-0"></div>
+    <div class="absolute bottom-0 right-0 w-[300px] h-[300px] bg-brand-primary/5 rounded-full blur-[100px] pointer-events-none z-0"></div>
+
+    <div class="container mx-auto px-6 max-w-site relative z-10">
+        
+        <!-- Cabeçalho Estratégico -->
+        <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+            <p class="text-brand-primary font-extrabold uppercase tracking-[0.2em] text-xs sm:text-sm mb-4 label-deco">
+                Para quem é este desafio
+            </p>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-white leading-tight tracking-tight">
+                Feito para profissionais de Educação Física que já atendem e querem atender melhor.
+            </h2>
+        </div>
+
+        <!-- Grid de Perfis e Benefícios (Sem letras em itálico) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 mb-16" data-aos="fade-up" data-aos-delay="100">
+            
+            <!-- Item 1 -->
+            <div class="group flex gap-4 items-start p-6 rounded-sm glass-strong border border-white/5 transition-all duration-300 hover:border-brand-primary/30 hover:bg-white/[0.04]">
+                <div class="w-8 h-8 rounded-sm bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
+                    <i class="fas fa-check text-brand-primary text-xs"></i>
+                </div>
+                <div class="space-y-1">
+                    <span class="text-white font-bold block text-sm uppercase tracking-wide">Público Alvo</span>
+                    <span class="text-brand-textSecondary text-sm font-medium leading-relaxed block">
+                        Profissional de Educação Física já formado ou no mínimo no 6º período da graduação.
+                    </span>
+                </div>
+            </div>
+            
+            <!-- Item 2 -->
+            <div class="group flex gap-4 items-start p-6 rounded-sm glass-strong border border-white/5 transition-all duration-300 hover:border-brand-primary/30 hover:bg-white/[0.04]">
+                <div class="w-8 h-8 rounded-sm bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
+                    <i class="fas fa-check text-brand-primary text-xs"></i>
+                </div>
+                <div class="space-y-1">
+                    <span class="text-white font-bold block text-sm uppercase tracking-wide">Evolução Técnica</span>
+                    <span class="text-brand-textSecondary text-sm font-medium leading-relaxed block">
+                        Você já atende mulheres no seu dia a dia, mas sente que poderia entregar <span class="text-brand-primary font-semibold">resultados estéticos e de emagrecimento muito melhores</span>.
+                    </span>
+                </div>
+            </div>
+            
+            <!-- Item 3 -->
+            <div class="group flex gap-4 items-start p-6 rounded-sm glass-strong border border-white/5 transition-all duration-300 hover:border-brand-primary/30 hover:bg-white/[0.04]">
+                <div class="w-8 h-8 rounded-sm bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
+                    <i class="fas fa-check text-brand-primary text-xs"></i>
+                </div>
+                <div class="space-y-1">
+                    <span class="text-white font-bold block text-sm uppercase tracking-wide">Fisiologia Aplicada</span>
+                    <span class="text-brand-textSecondary text-sm font-medium leading-relaxed block">
+                        Você quer entender <span class="text-brand-primary font-semibold">ciclo menstrual, oscilações hormônicas</span> e a <span class="text-brand-primary font-semibold">verdadeira biomecânica feminina</span> aplicados diretamente às suas planilhas de treino.
+                    </span>
+                </div>
+            </div>
+            
+            <!-- Card 4 -->
+            <div class="group flex gap-4 items-center p-5 rounded-sm glass-strong border border-white/5 transition-all duration-300 hover:border-brand-primary/30 hover:bg-white/[0.04]">
+                <span class="w-8 h-8 rounded-sm bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
+                    <i class="fas fa-check text-brand-primary text-sm"></i>
+                </span>
+                <span class="text-brand-textSecondary text-sm font-semibold transition-colors group-hover:text-white">
+                    Você quer se posicionar como <span class="text-brand-primary font-semibold">referência máxima em treinamento feminino</span>, seja no atendimento presencial ou em consultorias online.
+                </span>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="group md:col-span-2 flex gap-4 items-center p-5 rounded-sm glass-strong border border-white/5 transition-all duration-300 hover:border-brand-primary/30 hover:bg-white/[0.04]">
+                <span class="w-8 h-8 rounded-sm bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
+                    <i class="fas fa-check text-brand-primary text-sm"></i>
+                </span>
+                <span class="text-brand-textSecondary text-sm font-semibold transition-colors group-hover:text-white">
+                    Você quer captar mais <span class="text-brand-primary font-semibold">alunas de alto ticket</span> utilizando uma <span class="text-brand-primary font-semibold">autoridade técnica real</span> e incontestável, deixando de depender apenas de truques de marketing digital.
+                </span>
+            </div>
+        </div>
+
+        <!-- Botão de Chamada para Ação com Shimmer Effect -->
+        <div class="text-center space-y-4" data-aos="fade-up" data-aos-delay="250">
+            <button type="button" onclick="abrirPopup()"
+                class="group relative w-full sm:w-auto inline-flex bg-brand-primary hover:bg-brand-primaryHover text-white font-black uppercase tracking-wider py-5 px-12 rounded-sm transition-all duration-300 shadow-[0_12px_40px_0_rgba(219,24,96,0.4)] hover:shadow-[0_15px_50px_0_rgba(219,24,96,0.65)] hover:-translate-y-1 items-center justify-center gap-3 border-0 text-sm md:text-base cursor-pointer overflow-hidden">
+                <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
+                <span>SIM, É PRA MIM. GARANTIR VAGA</span>
+                <i class="fas fa-arrow-right text-sm transition-transform duration-300 group-hover:translate-x-1"></i>
+            </button>
+        </div>
+        
+    </div>
+</section>
+
+    <!-- 06 — O Evento -->
+    <section id="evento" class="py-24 bg-brand-surface border-y border-white/5 relative overflow-hidden">
+    <!-- Blobs decorativos e iluminação de fundo premium -->
+    <div class="absolute -bottom-20 left-0 w-[450px] h-[380px] bg-brand-primary/8 rounded-full blur-[120px] pointer-events-none z-0"></div>
+    <div class="absolute top-1/4 right-0 w-[300px] h-[300px] bg-brand-accent/5 rounded-full blur-[100px] pointer-events-none z-0"></div>
+
+    <div class="container mx-auto px-6 max-w-site relative z-10">
+        
+        <!-- Cabeçalho de Cronograma -->
+        <div class="text-center mb-16" data-aos="fade-up">
+            <p class="text-brand-primary font-extrabold uppercase tracking-[0.2em] text-xs sm:text-sm mb-4 label-deco">
+                2 dias ao vivo · Sábado e Domingo
+            </p>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-white leading-tight tracking-tight mb-4">
+                Um fim de semana. Um método completo.
+            </h2>
+            <p class="text-brand-textSecondary text-base sm:text-lg max-w-2xl mx-auto font-medium">
+                Dois turnos intensivos para estruturar um <span class="text-brand-primary font-semibold">modelo de raciocínio clínico e prático</span> que você aplicará em cada aluna que atender a partir de agora.
+            </p>
+        </div>
+
+        <!-- Grid de Cronograma de Imersão -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-16">
+            
+            <!-- Turno 01 — Sábado -->
+            <div class="group relative p-8 rounded-sm glass-strong border border-white/5 transition-all duration-300 hover:border-brand-primary/30 hover:bg-white/[0.04] flex flex-col justify-between" data-aos="fade-right">
+                <div class="absolute -right-2 -top-4 text-8xl font-black text-stroke opacity-[0.02] select-none pointer-events-none group-hover:opacity-[0.04] transition-opacity">01</div>
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="w-9 h-9 rounded-sm bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
+                            <span class="text-brand-primary font-black text-xs">01</span>
+                        </span>
+                        <p class="text-brand-primary text-xs font-bold uppercase tracking-widest">
+                            Sábado · Manhã · 9h
+                        </p>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-black text-white mb-4 tracking-tight">
+                        A mulher não é um homem menor
+                    </h3>
+                    <p class="text-brand-textSecondary text-sm sm:text-base leading-relaxed font-medium">
+                        Você compreenderá os motivos exatos pelos quais os modelos de prescrição que <span class="text-brand-primary font-semibold">funcionam para homens falham sistematicamente</span> com o público feminino. <span class="text-brand-primary font-semibold">Fisiologia aplicada, modulações do ciclo menstrual</span> e <span class="text-brand-primary font-semibold">composição tecidual diferenciada</span> traduzidos diretamente para as planilhas. Com <span class="text-brand-primary font-semibold">Garon, Krause e Lund</span> ao vivo.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Turno 02 — Domingo -->
+            <div class="group relative p-8 rounded-sm glass-strong border border-white/5 transition-all duration-300 hover:border-brand-primary/30 hover:bg-white/[0.04] flex flex-col justify-between" data-aos="fade-left">
+                <div class="absolute -right-2 -top-4 text-8xl font-black text-stroke opacity-[0.02] select-none pointer-events-none group-hover:opacity-[0.04] transition-opacity">02</div>
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="w-9 h-9 rounded-sm bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
+                            <span class="text-brand-primary font-black text-xs">02</span>
+                        </span>
+                        <p class="text-brand-primary text-xs font-bold uppercase tracking-widest">
+                            Domingo · Tarde · 14h
+                        </p>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-black text-white mb-4 tracking-tight">
+                        A profissional que a mulher brasileira precisa
+                    </h3>
+                    <p class="text-brand-textSecondary text-sm sm:text-base leading-relaxed font-medium">
+                        Montagem e ajuste de prescrição de treinamento construídos <span class="text-brand-primary font-semibold">em tempo real, do zero</span>, baseados em um <span class="text-brand-primary font-semibold">estudo de caso com uma aluna real</span>. Discussão aprofundada de <span class="text-brand-primary font-semibold">quadros clínicos práticos</span> e a tomada de decisão estratégica para se posicionar como um <span class="text-brand-primary font-semibold">especialista de alto ticket</span>, deixando de atuar como a média comum do mercado.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Botão de Inscrição da Seção -->
+        <div class="text-center space-y-4" data-aos="fade-up">
+            <button type="button" onclick="abrirPopup()"
+                class="group relative w-full sm:w-auto inline-flex bg-brand-primary hover:bg-brand-primaryHover text-white font-black uppercase tracking-wider py-5 px-12 rounded-sm transition-all duration-300 shadow-[0_12px_40px_rgba(219,24,96,0.4)] hover:shadow-[0_15px_60px_rgba(219,24,96,0.75)] hover:-translate-y-1 items-center justify-center gap-3 border-0 text-sm md:text-base cursor-pointer overflow-hidden">
+                <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
+                <span>QUERO GARANTIR MEUS 2 DIAS</span> 
+                <i class="fas fa-arrow-right text-sm transition-transform duration-300 group-hover:translate-x-1"></i>
+            </button>
+        </div>
+        
+    </div>
+</section>
+
+    <!-- 07 — Professores -->
+    <section id="bonus" class="py-24 relative overflow-hidden bg-brand-bg">
+    <!-- Glow ambiente de fundo integrado -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-brand-accent/6 rounded-full blur-[140px] pointer-events-none z-0"></div>
+    
+    <div class="container mx-auto px-6 max-w-site relative z-10">
+        <!-- Cabeçalho Estratégico -->
+        <div class="text-center mb-16" data-aos="fade-up">
+            <p class="text-brand-primary font-extrabold uppercase tracking-[0.2em] text-xs sm:text-sm mb-4 label-deco">
+                Os Especialistas
+            </p>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-white leading-tight tracking-tight max-w-3xl mx-auto">
+                Três dos maiores especialistas em treinamento feminino do Brasil. No mesmo evento. Ao vivo.
+            </h2>
+        </div>
+
+        <!-- Grid de Especialistas Premium -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-12">
+            
+            <!-- Carlos Garon -->
+            <div class="group bg-brand-surface border border-white/5 rounded-sm overflow-hidden shadow-2xl transition-all duration-300 hover:border-brand-primary/30 hover:bg-white/[0.04]" data-aos="fade-up">
+                <div class="relative overflow-hidden aspect-[4/5] bg-brand-surface">
+                    <img src="img/professores/1.jpg" alt="Carlos Garon" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-surface via-brand-surface/20 to-transparent"></div>
+                </div>
+                <div class="p-6">
+                    <span class="inline-block px-3 py-1.5 rounded-sm bg-brand-primary/10 border border-brand-primary/20 text-brand-primary text-[10px] font-bold uppercase tracking-wider mb-4 shadow-inner shadow-brand-primary/5">
+                        Professor Principal
+                    </span>
+                    <h3 class="text-xl font-black text-white mb-3 tracking-tight">Carlos Garon</h3>
+                    <p class="text-brand-textSecondary text-sm leading-relaxed font-medium">
+                        Especialista em <span class="text-brand-primary font-semibold">alta performance e saúde metabólica da mulher</span>. Renomado treinador de atletas e figuras públicas femininas, atua como professor da cadeira de <span class="text-brand-primary font-semibold">Saúde da Mulher da PTA</span> com vasta experiência prática no campo de batalha, ancorando e conduzindo os pilares teóricos do desafio.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Walter Krause -->
+            <div class="group bg-brand-surface border border-white/5 rounded-sm overflow-hidden shadow-2xl transition-all duration-300 hover:border-brand-purple/30 hover:bg-white/[0.04]" data-aos="fade-up" data-aos-delay="100">
+                <div class="relative overflow-hidden aspect-[4/5] bg-brand-surface">
+                    <img src="img/professores/2.jpg" alt="Walter Krause" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-surface via-brand-surface/20 to-transparent"></div>
+                </div>
+                <div class="p-6">
+                    <span class="inline-block px-3 py-1.5 rounded-sm bg-brand-purple/10 border border-brand-purple/30 text-brand-purple text-[10px] font-bold uppercase tracking-wider mb-4 shadow-inner shadow-brand-purple/5">
+                        Biomecânica e Fisiologia
+                    </span>
+                    <h3 class="text-xl font-black text-white mb-3 tracking-tight">Walter Krause</h3>
+                    <p class="text-brand-textSecondary text-sm leading-relaxed font-medium">
+                        Referência nacional em <span class="text-brand-primary font-semibold">análises científicas e ajustes biomecânicos</span> específicos para o corpo feminino. Autor de publicações de alto impacto sobre <span class="text-brand-primary font-semibold">reabilitação e otimização musculoesquelética</span> de mulheres, ele é o responsável por desmistificar as <span class="text-brand-primary font-semibold">particularidades anatômicas ocultas</span> que a maioria ignora nas avaliações diárias.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Rafa Lund -->
+            <div class="group bg-brand-surface border border-white/5 rounded-sm overflow-hidden shadow-2xl transition-all duration-300 hover:border-brand-teal/40 hover:bg-white/[0.04]" data-aos="fade-up" data-aos-delay="200">
+                <div class="relative overflow-hidden aspect-[4/5] bg-brand-surface">
+                    <img src="img/professores/3.jpg" alt="Rafa Lund" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-surface via-brand-surface/20 to-transparent"></div>
+                </div>
+                <div class="p-6">
+                    <span class="inline-block px-3 py-1.5 rounded-sm bg-brand-teal/20 border border-brand-teal/40 text-[#9A72B4] text-[10px] font-bold uppercase tracking-wider mb-4 shadow-inner">
+                        Prescrição Prática
+                    </span>
+                    <h3 class="text-xl font-black text-white mb-3 tracking-tight">Rafa Lund</h3>
+                    <p class="text-brand-textSecondary text-sm leading-relaxed font-medium">
+                        Especialista na estruturação prática de <span class="text-brand-primary font-semibold">casos clínicos complexos</span> aplicados a mulheres de todos os perfis. Mentor técnico com ampla casuística no tratamento prático de condições como <span class="text-brand-primary font-semibold">menopausa, SOP e lipedema</span>, entregando o mapa de <span class="text-brand-primary font-semibold">o que mudar na prescrição e o porquê científico</span>.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Botão de Ação Otimizado com Efeito Shimmer -->
+        <div class="text-center space-y-4" data-aos="fade-up" data-aos-delay="300">
+            <button type="button" onclick="abrirPopup()"
+                class="group relative w-full sm:w-auto inline-flex bg-brand-primary hover:bg-brand-primaryHover text-white font-black uppercase tracking-wider py-5 px-12 rounded-sm transition-all duration-300 shadow-[0_12px_40px_rgba(219,24,96,0.4)] hover:shadow-[0_15px_60px_rgba(219,24,96,0.75)] hover:-translate-y-1 items-center justify-center gap-3 border-0 text-sm md:text-base cursor-pointer overflow-hidden">
+                <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
+                <span>QUERO APRENDER COM OS 3</span> 
+                <i class="fas fa-arrow-right text-sm transition-transform duration-300 group-hover:translate-x-1"></i>
+            </button>
+        </div>
+        
+    </div>
+</section>
+
+    <!-- 08 — Módulos -->
+    <section id="modulos" class="py-24 bg-brand-surface border-y border-white/5 relative overflow-hidden">
+    <!-- Blur decorativo de fundo para criar profundidade visual -->
+    <div class="absolute top-1/4 -right-32 w-[400px] h-[400px] bg-brand-accent/5 rounded-full blur-[120px] pointer-events-none z-0"></div>
+    <div class="absolute bottom-1/4 -left-32 w-[400px] h-[400px] bg-brand-primary/5 rounded-full blur-[120px] pointer-events-none z-0"></div>
+
+    <div class="container mx-auto px-6 max-w-site relative z-10">
+        
+        <!-- Cabeçalho Estratégico -->
+        <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+            <p class="text-brand-primary font-extrabold uppercase tracking-[0.2em] text-xs sm:text-sm mb-4 label-deco">
+                O que você vai aprender
+            </p>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-white leading-tight tracking-tight">
+                O que ninguém te ensinou sobre treinar mulheres.
+            </h2>
+        </div>
+
+        <!-- Grid de Módulos (Sem letras em itálico e com Glassmorphism Avançado) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16" data-aos="fade-up" data-aos-delay="100">
+            
+            <!-- Card 1 -->
+            <div class="group relative p-6 rounded-sm glass-strong border border-white/5 transition-all duration-300 hover:border-brand-primary/30 hover:bg-white/[0.04] flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-sm bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center mb-5 text-brand-primary transition-all duration-300 group-hover:bg-brand-primary group-hover:text-white group-hover:shadow-[0_0_20px_rgba(219,24,96,0.4)]">
+                        <i class="fas fa-dna text-base"></i>
+                    </div>
+                    <h3 class="text-white font-black text-lg mb-3 tracking-tight group-hover:text-brand-primary transition-colors">
+                        Fisiologia feminina aplicada ao treino
+                    </h3>
+                    <p class="text-brand-textSecondary text-sm leading-relaxed font-medium">
+                        Como <span class="text-brand-primary font-semibold">estrogênio e progesterona</span> afetam diretamente a resposta ao treino, semana a semana. O que muda na <span class="text-brand-primary font-semibold">força, recuperação e composição corporal</span> ao longo do ciclo.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="group relative p-6 rounded-sm glass-strong border border-white/5 transition-all duration-300 hover:border-brand-purple/30 hover:bg-white/[0.04] flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-sm bg-brand-purple/10 border border-brand-purple/25 flex items-center justify-center mb-5 text-brand-purple transition-all duration-300 group-hover:bg-brand-purple group-hover:text-white group-hover:shadow-[0_0_20px_rgba(153,114,181,0.4)]">
+                        <i class="fas fa-arrows-rotate text-base"></i>
+                    </div>
+                    <h3 class="text-white font-black text-lg mb-3 tracking-tight group-hover:text-brand-primary transition-colors">
+                        As 4 fases do ciclo na prescrição
+                    </h3>
+                    <p class="text-brand-textSecondary text-sm leading-relaxed font-medium">
+                        <span class="text-brand-primary font-semibold">Volume, intensidade e escolha de exercício</span> baseados minuciosamente em cada fase. Aplicação prática direto no campo de batalha, sem rodeios ou teorias genéricas.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="group relative p-6 rounded-sm glass-strong border border-white/5 transition-all duration-300 hover:border-brand-primary/30 hover:bg-white/[0.04] flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-sm bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center mb-5 text-brand-primary transition-all duration-300 group-hover:bg-brand-primary group-hover:text-white group-hover:shadow-[0_0_20px_rgba(219,24,96,0.4)]">
+                        <i class="fas fa-person text-base"></i>
+                    </div>
+                    <h3 class="text-white font-black text-lg mb-3 tracking-tight group-hover:text-brand-primary transition-colors">
+                        Biomecânica do corpo feminino
+                    </h3>
+                    <p class="text-brand-textSecondary text-sm leading-relaxed font-medium">
+                        Os <span class="text-brand-primary font-semibold">desvios posturais e assimetrias mecânicas</span> mais comuns em mulheres, compreendendo as razões estruturais pelas quais acontecem e o <span class="text-brand-primary font-semibold">impacto direto no resultado estético</span>.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="group relative p-6 rounded-sm glass-strong border border-white/5 transition-all duration-300 hover:border-brand-teal/40 hover:bg-white/[0.04] flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-sm bg-brand-teal/20 border border-brand-teal/40 flex items-center justify-center mb-5 text-[#9A72B4] transition-all duration-300 group-hover:bg-brand-teal group-hover:text-white group-hover:shadow-[0_0_20px_rgba(36,56,57,0.6)]">
+                        <i class="fas fa-microscope text-base"></i>
+                    </div>
+                    <h3 class="text-white font-black text-lg mb-3 tracking-tight group-hover:text-brand-primary transition-colors">
+                        Casos reais com diagnóstico ao vivo
+                    </h3>
+                    <p class="text-brand-textSecondary text-sm leading-relaxed font-medium">
+                        Análise aprofundada de alunas que <span class="text-brand-primary font-semibold">não evoluíam, abandonaram treinos ou sentiam dores crônicas</span>. O <span class="text-brand-primary font-semibold">raciocínio clínico completo</span> apresentado de forma transparente.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="group relative p-6 rounded-sm glass-strong border border-white/5 transition-all duration-300 hover:border-brand-lilac/30 hover:bg-white/[0.04] flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-sm bg-brand-lilac/10 border border-brand-lilac/25 flex items-center justify-center mb-5 text-brand-lilac transition-all duration-300 group-hover:bg-brand-lilac group-hover:text-white group-hover:shadow-[0_0_20px_rgba(154,114,180,0.4)]">
+                        <i class="fas fa-clipboard-list text-base"></i>
+                    </div>
+                    <h3 class="text-white font-black text-lg mb-3 tracking-tight group-hover:text-brand-primary transition-colors">
+                        Prescrição ao vivo, do zero
+                    </h3>
+                    <p class="text-brand-textSecondary text-sm leading-relaxed font-medium">
+                        Acompanhe a construção de uma <span class="text-brand-primary font-semibold">planilha de treinos para uma aluna real</span>, com cada <span class="text-brand-primary font-semibold">tomada de decisão metodológica</span> explicada e justificada passo a passo pelos mentores.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="group relative p-6 rounded-sm glass-strong border border-white/5 transition-all duration-300 hover:border-brand-primary/30 hover:bg-white/[0.04] flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-sm bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center mb-5 text-brand-primary transition-all duration-300 group-hover:bg-brand-primary group-hover:text-white group-hover:shadow-[0_0_20px_rgba(219,24,96,0.4)]">
+                        <i class="fas fa-heart-pulse text-base"></i>
+                    </div>
+                    <h3 class="text-white font-black text-lg mb-3 tracking-tight group-hover:text-brand-primary transition-colors">
+                        Condições especiais da mulher
+                    </h3>
+                    <p class="text-brand-textSecondary text-sm leading-relaxed font-medium">
+                        <span class="text-brand-primary font-semibold">Menopausa, SOP, lipedema, gestação, pós-parto e reposição hormonal</span>. Descubra exatamente o que muda na programação técnica e como se posicionar com total segurança.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Botão de Chamada para Ação com Efeito Shimmer -->
+        <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+            <button type="button" onclick="abrirPopup()"
+                class="group relative w-full sm:w-auto inline-flex bg-brand-primary hover:bg-brand-primaryHover text-white font-black uppercase tracking-wider py-5 px-12 rounded-sm transition-all duration-300 shadow-[0_12px_40px_rgba(219,24,96,0.4)] hover:shadow-[0_15px_50px_rgba(219,24,96,0.65)] hover:-translate-y-1 items-center justify-center gap-3 border-0 text-sm md:text-base cursor-pointer overflow-hidden">
+                <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
+                <span>QUERO ACESSO A ESSE CONTEÚDO</span> 
+                <i class="fas fa-arrow-right text-sm transition-transform duration-300 group-hover:translate-x-1"></i>
+            </button>
+        </div>
+        
+    </div>
+</section>
+
+<!-- 09 — Depoimentos -->
+<section id="depoimentos" class="py-24 relative overflow-hidden bg-gradient-to-b from-transparent to-black/20">
+    <!-- Detalhe sutil de luz de fundo para destacar os cards -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-primary/5 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <div class="container mx-auto px-6 max-w-site relative z-10">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <p class="text-brand-primary font-bold uppercase tracking-widest text-xs md:text-sm mb-3 label-deco">
+                QUEM JÁ PASSOU POR AQUI
+            </p>
+            <h2 class="text-3xl md:text-5xl font-black text-white tracking-tight max-w-2xl mx-auto leading-tight">
+                O que dizem os profissionais que se tornaram <span class="text-brand-primary">experts</span>.
+            </h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 mb-16" data-aos="fade-up">
+            
+            <!-- Depoimento 1 -->
+            <blockquote class="glass-strong p-8 rounded-sm card-lift relative flex flex-col justify-between border border-white/5">
+                <div>
+                    <i class="fas fa-quote-left text-brand-primary/10 text-6xl absolute top-6 right-6 pointer-events-none"></i>
+                    
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="flex gap-1">
+                            <i class="fas fa-star text-brand-primary text-xs"></i>
+                            <i class="fas fa-star text-brand-primary text-xs"></i>
+                            <i class="fas fa-star text-brand-primary text-xs"></i>
+                            <i class="fas fa-star text-brand-primary text-xs"></i>
+                            <i class="fas fa-star text-brand-primary text-xs"></i>
+                        </div>
+                        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-1 bg-brand-primary/10 text-brand-primary rounded">Agenda Lotada</span>
+                    </div>
+
+                    <p class="text-brand-textSecondary text-sm md:text-base leading-relaxed mb-8 relative z-10 font-medium">
+                        "Antes eu vivia trocando seis por meia dúzia, trabalhando das 6h às 22h e sem tempo pra nada. Quando aprendi a metodologia, mudei meu posicionamento e criei minha consultoria online. Hoje minhas alunas têm resultados muito mais rápidos e eu passei a <span class="text-brand-primary font-semibold">faturar 3x mais trabalhando de casa</span>."
+                    </p>
+                </div>
+                
+                <footer class="flex items-center gap-4 pt-4 border-t border-white/5">
+                    <div class="w-11 h-11 rounded-full bg-white/10 border border-brand-primary/30 overflow-hidden flex-shrink-0">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Foto de Mariana Silva" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <span class="block text-sm text-white font-bold leading-tight">Mariana Silva</span>
+                        <span class="block text-xs text-brand-textMuted mt-0.5">Personal Trainer · São Paulo/SP</span>
+                    </div>
+                </footer>
+            </blockquote>
+
+            <!-- Depoimento 2 -->
+            <blockquote class="glass-strong p-8 rounded-sm card-lift relative flex flex-col justify-between border border-white/5">
+                <div>
+                    <i class="fas fa-quote-left text-brand-primary/10 text-6xl absolute top-6 right-6 pointer-events-none"></i>
+                    
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="flex gap-1">
+                            <i class="fas fa-star text-brand-primary text-xs"></i>
+                            <i class="fas fa-star text-brand-primary text-xs"></i>
+                            <i class="fas fa-star text-brand-primary text-xs"></i>
+                            <i class="fas fa-star text-brand-primary text-xs"></i>
+                            <i class="fas fa-star text-brand-primary text-xs"></i>
+                        </div>
+                        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-1 bg-brand-primary/10 text-brand-primary rounded">+15k/Mês</span>
+                    </div>
+
+                    <p class="text-brand-textSecondary text-sm md:text-base leading-relaxed mb-8 relative z-10 font-medium">
+                        "Eu tinha vergonha de cobrar o preço justo porque achava que a culpa era da crise. O método me deu a <span class="text-brand-primary font-semibold">segurança técnica</span> que faltava. Apliquei o protocolo com duas alunas de teste e o resultado foi tão absurdo que hoje cobro o <span class="text-brand-primary font-semibold">dobro da minha hora-aula</span> antiga e tenho <span class="text-brand-primary font-semibold">fila de espera</span>."
+                    </p>
+                </div>
+                
+                <footer class="flex items-center gap-4 pt-4 border-t border-white/5">
+                    <div class="w-11 h-11 rounded-full bg-white/10 border border-brand-primary/30 overflow-hidden flex-shrink-0">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Foto de Rodrigo Alves" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <span class="block text-sm text-white font-bold leading-tight">Rodrigo Alves</span>
+                        <span class="block text-xs text-brand-textMuted mt-0.5">Personal Trainer · Curitiba/PR</span>
+                    </div>
+                </footer>
+            </blockquote>
+
+            <!-- Depoimento 3 -->
+            <blockquote class="glass-strong p-8 rounded-sm card-lift relative flex flex-col justify-between border border-white/5">
+                <div>
+                    <i class="fas fa-quote-left text-brand-primary/10 text-6xl absolute top-6 right-6 pointer-events-none"></i>
+                    
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="flex gap-1">
+                            <i class="fas fa-star text-brand-primary text-xs"></i>
+                            <i class="fas fa-star text-brand-primary text-xs"></i>
+                            <i class="fas fa-star text-brand-primary text-xs"></i>
+                            <i class="fas fa-star text-brand-primary text-xs"></i>
+                            <i class="fas fa-star text-brand-primary text-xs"></i>
+                        </div>
+                        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-1 bg-brand-primary/10 text-brand-primary rounded">Autoridade</span>
+                    </div>
+
+                    <p class="text-brand-textSecondary text-sm md:text-base leading-relaxed mb-8 relative z-10 font-medium">
+                        "Me sentia apenas mais um no mercado saturado de academia. O curso abriu minha mente para a <span class="text-brand-primary font-semibold">biomecânica avançada e fisiologia aplicada</span> de verdade. Hoje os médicos da minha região me indicam pacientes de reabilitação. Virei <span class="text-brand-primary font-semibold">referência na minha cidade</span> graças a esse conhecimento."
+                    </p>
+                </div>
+                
+                <footer class="flex items-center gap-4 pt-4 border-t border-white/5">
+                    <div class="w-11 h-11 rounded-full bg-white/10 border border-brand-primary/30 overflow-hidden flex-shrink-0">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Foto de Juliana Costa" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <span class="block text-sm text-white font-bold leading-tight">Juliana Costa</span>
+                        <span class="block text-xs text-brand-textMuted mt-0.5">Fisioterapeuta e Personal · Belo Horizonte/MG</span>
+                    </div>
+                </footer>
+            </blockquote>
+        </div>
+
+        <div class="text-center" data-aos="fade-up">
+            <button type="button" onclick="abrirPopup()"
+                class="btn-shine bg-brand-primary hover:bg-brand-primaryHover text-white font-black uppercase text-sm md:text-base py-5 px-10 rounded-sm transition-all duration-300 border-0 hover:-translate-y-1 hover:shadow-[0_12px_40px_rgba(219,24,96,0.45)] group">
+                QUERO SER O PRÓXIMO CASE 
+                <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- 10 — FAQ -->
+<section id="faq" class="py-24 bg-brand-surface border-y border-white/5 relative overflow-hidden">
+    <!-- Detalhe de fundo para quebrar a monotonia -->
+    <div class="absolute bottom-0 right-0 w-[300px] h-[300px] bg-brand-primary/5 rounded-full blur-[100px] pointer-events-none"></div>
+
+    <div class="container mx-auto px-6 max-w-site-sm relative z-10">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <p class="text-brand-primary font-bold uppercase tracking-widest text-xs md:text-sm mb-3 label-deco">AINDA COM DÚVIDAS?</p>
+            <h2 class="text-3xl md:text-4xl font-black text-white tracking-tight">Perguntas frequentes</h2>
+        </div>
+
+        <div class="space-y-4 mb-16" data-aos="fade-up">
+            
+            <!-- Pergunta 1 -->
+            <div class="faq-item glass-strong rounded-sm overflow-hidden border border-white/5 transition-all duration-300 hover:border-white/10 hover:bg-white/[0.02] cursor-pointer" onclick="toggleFaq(this)">
+                <button class="w-full flex items-center justify-between p-6 text-left gap-4 group">
+                    <p class="text-white font-bold text-base md:text-lg transition-colors group-hover:text-brand-primary/90">
+                        Por que custa apenas R$ 19,90?
+                    </p>
+                    <span class="faq-icon w-8 h-8 rounded-sm bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-brand-primary/20">
+                        <i class="fas fa-plus text-brand-primary text-xs transition-transform duration-300"></i>
+                    </span>
+                </button>
+                <div class="faq-answer transition-all duration-300">
+                    <p class="text-brand-textSecondary leading-relaxed px-6 pb-6 text-sm md:text-base">
+                        Cobramos esse valor simbólico apenas para <span class="text-brand-primary font-semibold">filtrar os profissionais realmente comprometidos</span> com a evolução da carreira e cobrir os custos operacionais da plataforma de transmissão. O conteúdo entregue <span class="text-brand-primary font-semibold">vale facilmente mais de R$ 500,00</span>, mas nosso objetivo é torná-lo acessível para quem quer agir agora.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Pergunta 2 -->
+            <div class="faq-item glass-strong rounded-sm overflow-hidden border border-white/5 transition-all duration-300 hover:border-white/10 hover:bg-white/[0.02] cursor-pointer" onclick="toggleFaq(this)">
+                <button class="w-full flex items-center justify-between p-6 text-left gap-4 group">
+                    <p class="text-white font-bold text-base md:text-lg transition-colors group-hover:text-brand-primary/90">
+                        Precisa ser formado para participar?
+                    </p>
+                    <span class="faq-icon w-8 h-8 rounded-sm bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-brand-primary/20">
+                        <i class="fas fa-plus text-brand-primary text-xs transition-transform duration-300"></i>
+                    </span>
+                </button>
+                <div class="faq-answer transition-all duration-300">
+                    <p class="text-brand-textSecondary leading-relaxed px-6 pb-6 text-sm md:text-base">
+                        Como o conteúdo é <span class="text-brand-primary font-semibold">altamente técnico, prático</span> e focado em <span class="text-brand-primary font-semibold">aplicação fisiológica e biomecânica</span>, nós pressupomos uma base acadêmica. Portanto, o evento é exclusivo para <span class="text-brand-primary font-semibold">profissionais já formados em Educação Física</span> (ou áreas correlatas da saúde) e estudantes a partir do <span class="text-brand-primary font-semibold">6º período</span> da graduação.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Pergunta 3 -->
+            <div class="faq-item glass-strong rounded-sm overflow-hidden border border-white/5 transition-all duration-300 hover:border-white/10 hover:bg-white/[0.02] cursor-pointer" onclick="toggleFaq(this)">
+                <button class="w-full flex items-center justify-between p-6 text-left gap-4 group">
+                    <p class="text-white font-bold text-base md:text-lg transition-colors group-hover:text-brand-primary/90">
+                        Isso é uma venda? Tem algum produto no final?
+                    </p>
+                    <span class="faq-icon w-8 h-8 rounded-sm bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-brand-primary/20">
+                        <i class="fas fa-plus text-brand-primary text-xs transition-transform duration-300"></i>
+                    </span>
+                </button>
+                <div class="faq-answer transition-all duration-300">
+                    <p class="text-brand-textSecondary leading-relaxed px-6 pb-6 text-sm md:text-base">
+                        Direto ao ponto: sim, no final do evento nós abriremos as inscrições para a nossa <span class="text-brand-primary font-semibold">Pós-Graduação em Saúde da Mulher</span> com condições exclusivas. No entanto, o evento não é um "comercial disfarçado". As aulas são completas, profundas e entregam <span class="text-brand-primary font-semibold">valor real imediato</span>. Você sairá com <span class="text-brand-primary font-semibold">ferramentas práticas para aplicar com suas alunas no dia seguinte</span>, independentemente de decidir continuar conosco na pós ou não.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center" data-aos="fade-up">
+            <button type="button" onclick="abrirPopup()"
+                class="btn-shine bg-brand-primary hover:bg-brand-primaryHover text-white font-black uppercase text-sm md:text-base py-5 px-10 rounded-sm transition-all duration-300 border-0 hover:-translate-y-1 hover:shadow-[0_12px_40px_rgba(219,24,96,0.45)] group">
+                RESOLVIDO. QUERO MINHA VAGA 
+                <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- 11 — CTA Final -->
+    <section id="cta-final" class="py-24 relative overflow-hidden bg-black/40">
+        <!-- Blobs decorativos de fundo suavizados -->
+        <div class="blob top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[450px] bg-brand-primary/10 blur-[140px] pointer-events-none"></div>
+        <div class="blob top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[350px] bg-brand-accent/5 blur-[100px] pointer-events-none"></div>
+        
+        <div class="container mx-auto px-6 max-w-site text-center relative z-10" data-aos="zoom-in">
+            <div class="max-w-site-md mx-auto relative overflow-hidden rounded-sm border border-white/5 shadow-2xl">
+                
+                <!-- Gradiente de fundo interno para profundidade -->
+                <div class="absolute inset-0 bg-gradient-to-br from-brand-primary/15 via-transparent to-brand-accent/10 pointer-events-none"></div>
+                
+                <div class="relative glass-strong rounded-sm p-8 md:p-16 m-px flex flex-col items-center">
+                    <!-- Linha superior brilhante com transição suave -->
+                    <div class="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-brand-primary to-transparent opacity-80"></div>
+                    
+                    <!-- Tag de escassez com luz pulsante -->
+                    <p class="text-brand-primary font-bold uppercase tracking-widest text-xs md:text-sm mb-6 flex items-center justify-center gap-2 bg-brand-primary/10 px-4 py-1.5 rounded-sm border border-brand-primary/20">
+                        <span class="w-2 h-2 rounded-full bg-brand-primary animate-pulse shadow-[0_0_10px_#db1860]"></span>
+                        ÚLTIMAS VAGAS DISPONÍVEIS
+                        <span class="w-2 h-2 rounded-full bg-brand-primary animate-pulse shadow-[0_0_10px_#db1860]"></span>
+                    </p>
+                    
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-6 leading-tight max-w-2xl">
+                        Toda mulher merece um profissional que entende o corpo dela.
+                        <span class="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-brand-primary via-rose-400 to-brand-accent">
+                            Você vai ser esse profissional?
+                        </span>
+                    </h2>
+                    
+                    <p class="text-brand-textSecondary text-lg md:text-xl mb-10 font-medium max-w-xl">
+                        Apenas <span class="text-white font-bold">R$ 19,90</span>. 2 dias de imersão de alto nível. Uma única decisão para virar o jogo.
+                    </p>
+                    
+                    <!-- Botão de Ação Principal Otimizado -->
+                    <button type="button" onclick="abrirPopup()"
+                        class="btn-shine w-full sm:w-auto bg-brand-primary hover:bg-brand-primaryHover text-white font-black text-base md:text-lg py-5 px-12 rounded-sm transition-all duration-300 border-0 uppercase shadow-[0_10px_40px_rgba(219,24,96,0.4)] hover:shadow-[0_15px_50px_rgba(219,24,96,0.6)] hover:-translate-y-1 group">
+                        GARANTIR MINHA VAGA POR R$ 19,90 
+                        <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                    </button>
+                    
+                    <!-- Bullet points técnicos em formato de selos -->
+                    <div class="mt-8 flex flex-wrap justify-center items-center gap-x-6 gap-y-2 text-xs md:text-sm text-brand-textMuted font-medium border-t border-white/5 pt-6 w-full">
+                        <span class="flex items-center gap-1.5">
+                            <i class="fas fa-calendar-alt text-brand-primary/70"></i> Sábado e Domingo
+                        </span>
+                        <span class="hidden sm:inline text-white/10">•</span>
+                        <span class="flex items-center gap-1.5">
+                            <i class="fas fa-video text-brand-primary/70"></i> 100% Online e Ao Vivo
+                        </span>
+                        <span class="hidden sm:inline text-white/10">•</span>
+                        <span class="flex items-center gap-1.5">
+                            <i class="fas fa-user-grad text-brand-primary/70"></i> Exclusivo para Ed. Física
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 border-t border-white/5 bg-brand-bg">
+        <div class="container mx-auto px-6 max-w-site">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <a href="#home" class="shrink-0 opacity-60 hover:opacity-100 transition-opacity">
+                    <img src="assets/logoPTA.svg" alt="Personal Trainer Academy" class="h-8 w-auto">
+                </a>
+                <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-xs text-brand-textMuted">
+                    <a href="#metodo">O Método</a>
+                    <a href="#modulos">Módulos</a>
+                    <a href="#bonus">Especialistas</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <p class="text-[11px] text-brand-textMuted text-center md:text-right leading-relaxed">
+                    © 2025 Personal Trainer Academy<br class="hidden md:block">
+                    Todos os direitos reservados.
+                </p>
+            </div>
+            <hr class="gradient-rule mt-8">
+            <p class="text-center text-[10px] text-brand-textMuted/50 mt-4">
+                Desafio Expert Feminino · Online e ao vivo · Exclusivo para profissionais de Educação Física
+            </p>
+        </div>
+    </footer>
+
+    <!-- Popup de inscrição -->
+    <div id="popup-captura"
+        class="fixed inset-0 z-[100] hidden items-center justify-center p-4 bg-black/95 backdrop-blur-sm"
+        aria-hidden="true">
+        <div
+            class="relative bg-brand-surface border border-brand-primary/30 rounded-sm shadow-[0_0_80px_rgba(219,24,96,0.2)] max-w-md w-full p-8 md:p-10">
+            <div
+                class="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-brand-primary to-brand-accent rounded-t-sm">
+            </div>
+            <button type="button" onclick="fecharPopup()"
+                class="absolute top-6 right-6 w-10 h-10 rounded-sm bg-white/5 border border-white/10 hover:bg-brand-primary/20 hover:border-brand-primary/30 flex items-center justify-center text-gray-400 hover:text-white transition border-0"
+                aria-label="Fechar">
+                <i class="fas fa-times text-sm"></i>
+            </button>
+            <div class="text-center mb-6">
+                <h3 class="font-black text-2xl text-white uppercase tracking-tight mb-1">Garanta sua vaga</h3>
+                <p class="text-sm text-brand-textMuted">Preencha seus dados para se inscrever.</p>
+            </div>
+            <form id="form-expert-feminino" class="space-y-4">
+                <div>
+                    <label for="lead-nome" class="block text-sm font-medium text-gray-300 mb-1">Nome</label>
+                    <input type="text" id="lead-nome" name="nome" required placeholder="Seu nome completo"
+                        class="w-full px-4 py-3 rounded-sm bg-brand-bg border border-white/10 text-white placeholder-gray-500 focus:border-brand-primary focus:ring-1 focus:ring-brand-primary outline-none transition">
+                </div>
+                <div>
+                    <label for="lead-email" class="block text-sm font-medium text-gray-300 mb-1">Email</label>
+                    <input type="email" id="lead-email" name="email" required placeholder="seu@email.com"
+                        class="w-full px-4 py-3 rounded-sm bg-brand-bg border border-white/10 text-white placeholder-gray-500 focus:border-brand-primary focus:ring-1 focus:ring-brand-primary outline-none transition">
+                </div>
+                <div>
+                    <label for="lead-phone" class="block text-sm font-medium text-gray-300 mb-1">Telefone</label>
+                    <div
+                        class="flex rounded-sm overflow-hidden border border-white/10 focus-within:border-brand-primary focus-within:ring-1 focus-within:ring-brand-primary bg-brand-bg">
+                        <span
+                            class="inline-flex items-center px-4 py-3 bg-brand-primary text-white font-bold shrink-0">+55</span>
+                        <input type="tel" id="lead-phone" name="phone" required placeholder="(11) 99999-9999"
+                            maxlength="15" autocomplete="tel"
+                            class="flex-1 px-4 py-3 bg-transparent text-white placeholder-gray-500 outline-none min-w-0">
+                    </div>
+                    <p class="text-brand-textMuted text-xs mt-1">DDD + número</p>
+                </div>
+                <p class="error-msg text-red-400 text-xs hidden">Informe o DDD e o número completo.</p>
+                <button type="submit"
+                    class="w-full btn-shine bg-brand-primary hover:bg-brand-primaryHover text-white font-bold py-4 rounded-sm uppercase tracking-widest transition btn-submit border-0 shadow-[0_5px_25px_rgba(219,24,96,0.4)] hover:shadow-[0_8px_35px_rgba(219,24,96,0.6)]">
+                    QUERO MINHA VAGA
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 50, duration: 800 });
+
+        if (window.innerWidth >= 1024) {
+            const cursor = document.getElementById('cursor');
+            const cursorDot = document.getElementById('cursor-dot');
+            document.addEventListener('mousemove', (e) => {
+                cursorDot.style.left = e.clientX + 'px';
+                cursorDot.style.top = e.clientY + 'px';
+                setTimeout(() => {
+                    cursor.style.left = e.clientX + 'px';
+                    cursor.style.top = e.clientY + 'px';
+                }, 40);
+            });
+            document.querySelectorAll('a, button, input').forEach(el => {
+                el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+                el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+            });
+        }
+
+        const popup = document.getElementById('popup-captura');
+        function abrirPopup() {
+            popup.classList.remove('hidden');
+            popup.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+        function fecharPopup() {
+            popup.classList.add('hidden');
+            popup.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+        popup.addEventListener('click', (e) => { if (e.target === popup) fecharPopup(); });
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') fecharPopup(); });
+
+        function toggleFaq(item) {
+            const answer = item.querySelector('.faq-answer');
+            const isOpen = item.classList.contains('open');
+            document.querySelectorAll('.faq-item').forEach(i => {
+                i.classList.remove('open');
+                i.querySelector('.faq-answer').classList.remove('open');
+            });
+            if (!isOpen) {
+                item.classList.add('open');
+                answer.classList.add('open');
+            }
+        }
+
+        const telInput = document.getElementById('lead-phone');
+        telInput.addEventListener('input', function (e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.startsWith('55') && value.length > 2) value = value.slice(2);
+            value = value.slice(0, 11);
+            let formatado = value;
+            if (value.length > 2) formatado = `(${value.slice(0, 2)}) ` + value.slice(2);
+            if (value.length > 7) formatado = formatado.slice(0, 10) + '-' + formatado.slice(10);
+            e.target.value = formatado;
+            document.querySelector('.error-msg')?.classList.add('hidden');
+        });
+
+        function getUTMs() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                utm_source: params.get('utm_source') || '',
+                utm_medium: params.get('utm_medium') || '',
+                utm_campaign: params.get('utm_campaign') || '',
+                utm_term: params.get('utm_term') || '',
+                utm_content: params.get('utm_content') || ''
+            };
+        }
+
+        document.getElementById('form-expert-feminino').addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const btnSubmit = this.querySelector('.btn-submit');
+            const errorMsg = this.querySelector('.error-msg');
+            const rawPhone = telInput.value.replace(/\D/g, '');
+            if (rawPhone.length < 10) {
+                errorMsg.classList.remove('hidden');
+                telInput.focus();
+                return;
+            }
+            btnSubmit.disabled = true;
+            btnSubmit.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> PROCESSANDO...';
+            const utms = getUTMs();
+            const payload = {
+                nome: document.getElementById('lead-nome').value.trim(),
+                email: document.getElementById('lead-email').value.trim(),
+                telefone: '+55' + rawPhone,
+                utm_source: utms.utm_source,
+                utm_term: utms.utm_term,
+                utm_campaign: utms.utm_campaign,
+                utm_medium: utms.utm_medium,
+                utm_content: utms.utm_content,
+                url: window.location.href
+            };
+            const webhookUrl = 'https://hook.us1.make.com/bj1q14346ezeybpcqjb9ctea89aoatvn?produto=2_Dias_Expert_Feminino';
+            const redirectFallback = '#';
+            try {
+                await fetch(webhookUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload),
+                    mode: 'no-cors'
+                });
+            } catch (error) {
+                console.error(error);
+            } finally {
+                const query = new URLSearchParams(payload).toString();
+                window.location.href = redirectFallback + '?' + query;
+            }
+        });
+    </script>
+</body>
+
+</html>
