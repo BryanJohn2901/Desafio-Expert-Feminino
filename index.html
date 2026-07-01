@@ -1547,13 +1547,19 @@
                         class="flex rounded-sm overflow-hidden border border-white/10 focus-within:border-brand-primary focus-within:ring-1 focus-within:ring-brand-primary bg-brand-hero">
                         <span
                             class="inline-flex items-center px-4 py-3 bg-brand-primary text-brand-onPrimary font-bold shrink-0">+55</span>
-                        <input type="tel" id="lead-phone" name="phone" required placeholder="(11) 99999-9999"
+                        <input type="tel" id="lead-phone" name="telefone" required placeholder="(11) 99999-9999"
                             maxlength="15" autocomplete="tel"
                             class="flex-1 px-4 py-3 bg-transparent text-white placeholder-gray-500 outline-none min-w-0">
                     </div>
                     <p class="text-brand-textMuted text-xs mt-1">DDD + número</p>
                 </div>
                 <p class="error-msg text-red-400 text-xs hidden">Informe o DDD e o número completo.</p>
+                <input type="hidden" id="utm_source" name="utm_source">
+                <input type="hidden" id="utm_term" name="utm_term">
+                <input type="hidden" id="utm_campaign" name="utm_campaign">
+                <input type="hidden" id="utm_medium" name="utm_medium">
+                <input type="hidden" id="utm_content" name="utm_content">
+                <input type="hidden" id="url" name="url">
                 <button type="submit"
                     class="w-full btn-shine bg-brand-primary hover:bg-brand-primaryHover text-brand-onPrimary font-bold py-4 rounded-sm uppercase tracking-widest transition btn-submit border-0 shadow-[0_5px_25px_rgba(255,204,41,0.4)] hover:shadow-[0_8px_35px_rgba(255,204,41,0.6)]">
                     GARANTIR MEU INGRESSO
@@ -1622,16 +1628,16 @@
             document.querySelector('.error-msg')?.classList.add('hidden');
         });
 
-        function getUTMs() {
+        (function preencherUTMs() {
             const params = new URLSearchParams(window.location.search);
-            return {
-                utm_source: params.get('utm_source') || '',
-                utm_medium: params.get('utm_medium') || '',
-                utm_campaign: params.get('utm_campaign') || '',
-                utm_term: params.get('utm_term') || '',
-                utm_content: params.get('utm_content') || ''
-            };
-        }
+            const campos = ['utm_source', 'utm_term', 'utm_campaign', 'utm_medium', 'utm_content'];
+            campos.forEach((campo) => {
+                const el = document.getElementById(campo);
+                if (el) el.value = params.get(campo) || '';
+            });
+            const urlField = document.getElementById('url');
+            if (urlField) urlField.value = window.location.href;
+        })();
 
         document.getElementById('form-expert-feminino').addEventListener('submit', async function (e) {
             e.preventDefault();
@@ -1645,20 +1651,35 @@
             }
             btnSubmit.disabled = true;
             btnSubmit.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> PROCESSANDO...';
-            const utms = getUTMs();
+            const nome = document.getElementById('lead-nome').value.trim();
+            const email = document.getElementById('lead-email').value.trim();
+            const telefone = '+55' + rawPhone;
             const payload = {
-                nome: document.getElementById('lead-nome').value.trim(),
-                email: document.getElementById('lead-email').value.trim(),
-                telefone: '+55' + rawPhone,
-                utm_source: utms.utm_source,
-                utm_term: utms.utm_term,
-                utm_campaign: utms.utm_campaign,
-                utm_medium: utms.utm_medium,
-                utm_content: utms.utm_content,
-                url: window.location.href
+                nome: nome,
+                email: email,
+                telefone: telefone,
+                utm_source: document.getElementById('utm_source')?.value || '',
+                utm_term: document.getElementById('utm_term')?.value || '',
+                utm_campaign: document.getElementById('utm_campaign')?.value || '',
+                utm_medium: document.getElementById('utm_medium')?.value || '',
+                utm_content: document.getElementById('utm_content')?.value || '',
+                url: document.getElementById('url')?.value || window.location.href
             };
-            const webhookUrl = 'https://hook.us1.make.com/bj1q14346ezeybpcqjb9ctea89aoatvn?produto=2_Dias_Expert_Feminino';
-            const redirectFallback = '#';
+            const WEBHOOK_BASE = 'https://hook.us1.make.com/bj1q14346ezeybpcqjb9ctea89aoatvn';
+            const PRODUTO = '2_Dias_Expert_Feminino';
+            const webhookUrl = `${WEBHOOK_BASE}?produto=${PRODUTO}`;
+            const checkoutUrl = 'https://chk.eduzz.com/Q9N2NDKZ01';
+            const redirectParams = new URLSearchParams({
+                name: nome,
+                email: email,
+                telefone: telefone,
+                utm_source: payload.utm_source,
+                utm_term: payload.utm_term,
+                utm_campaign: payload.utm_campaign,
+                utm_medium: payload.utm_medium,
+                utm_content: payload.utm_content,
+                url: payload.url
+            });
             try {
                 await fetch(webhookUrl, {
                     method: 'POST',
@@ -1669,8 +1690,7 @@
             } catch (error) {
                 console.error(error);
             } finally {
-                const query = new URLSearchParams(payload).toString();
-                window.location.href = redirectFallback + '?' + query;
+                window.location.href = checkoutUrl + '?' + redirectParams.toString();
             }
         });
     </script>
