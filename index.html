@@ -470,6 +470,23 @@
             color: #FFFFFF !important;
         }
 
+        .hero-mobile-blend {
+            position: relative;
+        }
+
+        .hero-mobile-blend::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 38%;
+            min-height: 6rem;
+            max-height: 10rem;
+            background: linear-gradient(to bottom, transparent 0%, rgba(0, 11, 46, 0.55) 52%, #000B2E 100%);
+            pointer-events: none;
+        }
+
         /* Scroll hint animation */
         @keyframes scroll-bounce {
             0%, 100% { transform: translateY(0); opacity: 0.5; }
@@ -564,18 +581,22 @@
 
     <!-- Hero + CTA — fundo contínuo -->
     <div class="hero-cta-flow relative">
-    <header id="home" class="relative min-h-screen pt-28 md:pt-32 pb-12 lg:pb-16 overflow-hidden bg-transparent">
-    <!-- Background — cobre toda a hero -->
-    <div class="absolute inset-0 z-0">
-        <picture class="block w-full h-full">
-            <source media="(min-width: 1024px)" srcset="img/web2.webp">
-            <img src="img/mobile2.webp" alt="" aria-hidden="true"
-                class="w-full h-full object-cover object-[center_15%] lg:object-[72%_center]"
-                loading="eager" fetchpriority="high">
-        </picture>
-        <div class="absolute inset-0 bg-gradient-to-b from-brand-hero/10 via-brand-hero/30 to-brand-bgMid/90 lg:from-brand-hero/10 lg:via-brand-hero/35 lg:to-transparent"></div>
-        <div class="absolute inset-0 bg-gradient-to-r from-brand-hero/88 via-brand-hero/45 to-transparent max-w-[100%] lg:max-w-[62%]"></div>
-        <div class="absolute inset-x-0 bottom-0 h-32 sm:h-40 lg:h-48 bg-gradient-to-b from-transparent to-brand-bgMid/90 pointer-events-none"></div>
+    <header id="home" class="relative lg:min-h-screen lg:pt-32 lg:pb-16 overflow-hidden bg-brand-hero lg:bg-transparent">
+    <!-- Imagem mobile — topo, imagem inteira -->
+    <div class="lg:hidden hero-mobile-blend w-full leading-none">
+        <img src="img/mobile2.webp" alt="Intensivo Prático de Treinamento Feminino"
+            class="w-full h-auto block"
+            loading="eager" fetchpriority="high">
+    </div>
+
+    <!-- Background desktop -->
+    <div class="absolute inset-0 z-0 hidden lg:block">
+        <img src="img/web2.webp" alt="" aria-hidden="true"
+            class="w-full h-full object-cover object-[72%_center]"
+            loading="eager" fetchpriority="high">
+        <div class="absolute inset-0 bg-gradient-to-b from-brand-hero/10 via-brand-hero/35 to-transparent"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-brand-hero/88 via-brand-hero/45 to-transparent max-w-[62%]"></div>
+        <div class="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-b from-transparent to-brand-bgMid/90 pointer-events-none"></div>
     </div>
 
     <!-- Blobs de Luz / Glow de Fundo -->
@@ -583,9 +604,9 @@
     <div class="absolute top-1/2 -right-48 w-[500px] h-[500px] bg-brand-bgMid/20 rounded-full blur-[140px] pointer-events-none z-0 hidden lg:block"></div>
     <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-brand-primary/6 rounded-full blur-[120px] pointer-events-none z-0 hidden lg:block"></div>
 
-    <div class="container mx-auto px-6 relative z-10 max-w-site lg:flex lg:items-center lg:min-h-[calc(100vh-5rem)] min-h-[calc(100vh-8rem)]">
+    <div class="container mx-auto px-6 relative z-10 max-w-site bg-brand-hero lg:bg-transparent lg:flex lg:items-center lg:min-h-[calc(100vh-5rem)] pt-8 pb-10 lg:py-0">
         <div class="grid lg:grid-cols-[minmax(0,32rem)_1fr] xl:grid-cols-[minmax(0,36rem)_1fr] gap-8 items-center">
-        <div class="space-y-8 text-center lg:text-left mx-auto lg:mx-0 w-full max-w-xl lg:max-w-none pt-6 lg:pt-0" data-aos="fade-up">
+        <div class="space-y-8 text-center lg:text-left mx-auto lg:mx-0 w-full max-w-xl lg:max-w-none" data-aos="fade-up">
             
             <!-- Logo Hero -->
             <div class="flex justify-center lg:justify-start">
