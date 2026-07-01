@@ -376,6 +376,98 @@
             letter-spacing: 0.05em;
         }
 
+        .section-light {
+            background-color: #E8ECF3;
+            border-top: 1px solid rgba(0, 11, 46, 0.08);
+            border-bottom: 1px solid rgba(0, 11, 46, 0.08);
+        }
+
+        .section-light > .absolute[class*="blur"] {
+            display: none;
+        }
+
+        .section-light h2,
+        .section-light h3.font-display:not(.text-red-400):not(.text-brand-primary) {
+            color: #000B2E;
+        }
+
+        .section-light .text-white {
+            color: #000B2E;
+        }
+
+        .section-light .text-brand-textSecondary {
+            color: #475467;
+        }
+
+        .section-light .text-brand-textMuted {
+            color: #667085;
+        }
+
+        .section-light .glass-strong {
+            background: #F3F6FB;
+            border: 1px solid rgba(0, 11, 46, 0.1);
+            box-shadow: 0 4px 24px rgba(0, 11, 46, 0.05);
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
+        }
+
+        .section-light .group:hover .text-brand-textSecondary,
+        .section-light .group:hover span.text-brand-textSecondary {
+            color: #000B2E;
+        }
+
+        .section-light .border-white\/5 {
+            border-color: rgba(0, 11, 46, 0.08);
+        }
+
+        .section-light .border-white\/10 {
+            border-color: rgba(0, 11, 46, 0.12);
+        }
+
+        .section-light .hover\:border-white\/10:hover {
+            border-color: rgba(0, 11, 46, 0.16);
+        }
+
+        .section-light .hover\:bg-white\/\[0\.02\]:hover,
+        .section-light .hover\:bg-white\/\[0\.04\]:hover {
+            background-color: rgba(0, 11, 46, 0.04);
+        }
+
+        #modulos .section-label {
+            color: #009739;
+        }
+
+        #modulos .module-card {
+            background-color: #102650;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 8px 30px rgba(0, 11, 46, 0.12);
+        }
+
+        #modulos .module-card .text-white,
+        #modulos .module-card h3 {
+            color: #FFFFFF !important;
+        }
+
+        #modulos .module-card .text-brand-textSecondary,
+        #modulos .module-card p {
+            color: #FFFFFF !important;
+        }
+
+        #modulos .module-card:hover .text-brand-textSecondary,
+        #modulos .module-card:hover p {
+            color: #FFFFFF !important;
+        }
+
+        #modulos .module-icon {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #FFFFFF;
+        }
+
+        #modulos .module-btn {
+            color: #FFFFFF;
+        }
+
         /* Scroll hint animation */
         @keyframes scroll-bounce {
             0%, 100% { transform: translateY(0); opacity: 0.5; }
@@ -423,11 +515,11 @@
         <div class="container mx-auto max-w-site px-4 py-3">
             <div class="flex items-center gap-3 sm:gap-4">
                 <a href="#home" class="shrink-0 hidden sm:flex items-center gap-2.5 pr-3 border-r border-white/10">
-                    <img src="assets/5.svg" alt="Intensivo Prático de Treinamento Feminino" class="h-9 w-auto">
+                    <img src="img/Logo.svg" alt="Intensivo Prático de Treinamento Feminino" class="h-10 w-auto">
                     <img src="assets/logoPTA.svg" alt="Personal Trainer Academy" class="h-8 w-auto opacity-70">
                 </a>
                 <a href="#home" class="shrink-0 sm:hidden">
-                    <img src="assets/5.svg" alt="Intensivo Prático de Treinamento Feminino" class="h-8 w-auto">
+                    <img src="img/Logo.svg" alt="Intensivo Prático de Treinamento Feminino" class="h-9 w-auto">
                 </a>
                 <p class="flex-1 min-w-0 text-[9px] sm:text-[10px] md:text-xs text-brand-textSecondary font-medium leading-snug">
                     <span class="text-brand-primary font-bold uppercase tracking-wide">Intensivo Prático</span>
@@ -474,7 +566,7 @@
     <!-- Background — cobre toda a hero -->
     <div class="absolute inset-0 z-0">
         <picture class="block w-full h-full">
-            <source media="(min-width: 1024px)" srcset="img/web.webp">
+            <source media="(min-width: 1024px)" srcset="img/web2.webp">
             <img src="img/mobile.webp" alt="" aria-hidden="true"
                 class="w-full h-full object-cover object-[center_15%] lg:object-[72%_center]"
                 loading="eager" fetchpriority="high">
@@ -497,11 +589,6 @@
             <div class="flex justify-center lg:justify-start">
                 <img src="img/Logo.svg" alt="Intensivo Prático de Treinamento Feminino" class="h-36 md:h-44 w-auto">
             </div>
-
-            <!-- Kicker -->
-            <p class="text-brand-primary font-bold uppercase tracking-widest text-xs sm:text-sm -mt-4">
-                Depois da Copa, direto pra prática.
-            </p>
 
             <!-- Headline -->
             <h1 class="font-display font-black text-white tracking-tight normal-case text-xl sm:text-2xl lg:text-3xl xl:text-[1.9rem] leading-[1.35] max-w-xl lg:max-w-[32rem] mx-auto lg:mx-0">
@@ -822,7 +909,7 @@
 </section>
 
     <!-- 05 — Para Quem É -->
-    <section id="para-quem" class="py-24 relative overflow-hidden section-gradient">
+    <section id="para-quem" class="py-24 relative overflow-hidden section-light">
     <!-- Blobs e efeitos de iluminação de fundo -->
     <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-brand-accent/5 rounded-full blur-[130px] pointer-events-none z-0"></div>
     <div class="absolute bottom-0 right-0 w-[300px] h-[300px] bg-brand-primary/5 rounded-full blur-[100px] pointer-events-none z-0"></div>
@@ -1054,7 +1141,7 @@
 </section>
 
     <!-- 08 — Módulos -->
-    <section id="modulos" class="py-24 section-mid border-y border-white/5 relative overflow-hidden">
+    <section id="modulos" class="py-24 relative overflow-hidden section-light">
     <!-- Blur decorativo de fundo para criar profundidade visual -->
     <div class="absolute top-1/4 -right-32 w-[400px] h-[400px] bg-brand-accent/5 rounded-full blur-[120px] pointer-events-none z-0"></div>
     <div class="absolute bottom-1/4 -left-32 w-[400px] h-[400px] bg-brand-primary/5 rounded-full blur-[120px] pointer-events-none z-0"></div>
@@ -1063,10 +1150,10 @@
         
         <!-- Cabeçalho Estratégico -->
         <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
-            <p class="text-brand-primary font-extrabold uppercase tracking-[0.2em] text-xs sm:text-sm mb-4 label-deco">
+            <p class="section-label text-brand-accent font-extrabold uppercase tracking-[0.2em] text-xs sm:text-sm mb-4 label-deco">
                 O que ninguém te ensinou sobre treinar mulheres
             </p>
-            <h2 class="font-display text-2xl md:text-3xl lg:text-4xl font-black text-white leading-tight tracking-tight">
+            <h2 class="font-display text-2xl md:text-3xl lg:text-4xl font-black text-brand-bg leading-tight tracking-tight">
                 O que ninguém te ensinou sobre treinar mulheres.
             </h2>
         </div>
@@ -1075,90 +1162,90 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16" data-aos="fade-up" data-aos-delay="100">
             
             <!-- Card 1 -->
-            <div class="group relative p-6 rounded-sm glass-strong border border-white/5 transition-all duration-300 hover:border-brand-primary/30 hover:bg-white/[0.04] flex flex-col justify-between">
+            <div class="group relative p-6 rounded-sm module-card transition-all duration-300 hover:border-white/20 flex flex-col justify-between">
                 <div>
-                    <div class="w-12 h-12 rounded-sm bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center mb-5 text-brand-primary transition-all duration-300 group-hover:bg-brand-primary group-hover:text-brand-onPrimary group-hover:shadow-[0_0_20px_rgba(255,204,41,0.4)]">
+                    <div class="module-icon w-12 h-12 rounded-sm flex items-center justify-center mb-5">
                         <i class="fas fa-dna text-base"></i>
                     </div>
-                    <h3 class="font-display text-white font-black text-base mb-3 tracking-tight group-hover:text-brand-primary transition-colors">
+                    <h3 class="font-display text-white font-black text-base mb-3 tracking-tight">
                         Fisiologia feminina aplicada ao treino
                     </h3>
-                    <p class="text-brand-textSecondary text-sm leading-relaxed font-medium">
+                    <p class="text-white text-sm leading-relaxed font-medium">
                         Como estrogênio e progesterona afetam diretamente a resposta ao treino, semana a semana. O que muda na força, recuperação e composição corporal ao longo do ciclo.
                     </p>
                 </div>
             </div>
 
             <!-- Card 2 -->
-            <div class="group relative p-6 rounded-sm glass-strong border border-white/5 transition-all duration-300 hover:border-brand-purple/30 hover:bg-white/[0.04] flex flex-col justify-between">
+            <div class="group relative p-6 rounded-sm module-card transition-all duration-300 hover:border-white/20 flex flex-col justify-between">
                 <div>
-                    <div class="w-12 h-12 rounded-sm bg-brand-purple/10 border border-brand-purple/25 flex items-center justify-center mb-5 text-brand-purple transition-all duration-300 group-hover:bg-brand-purple group-hover:text-white group-hover:shadow-[0_0_20px_rgba(0,39,118,0.4)]">
+                    <div class="module-icon w-12 h-12 rounded-sm flex items-center justify-center mb-5">
                         <i class="fas fa-arrows-rotate text-base"></i>
                     </div>
-                    <h3 class="font-display text-white font-black text-base mb-3 tracking-tight group-hover:text-brand-primary transition-colors">
+                    <h3 class="font-display text-white font-black text-base mb-3 tracking-tight">
                         As 4 fases do ciclo na prescrição
                     </h3>
-                    <p class="text-brand-textSecondary text-sm leading-relaxed font-medium">
+                    <p class="text-white text-sm leading-relaxed font-medium">
                         Volume, intensidade e escolha de exercício baseados minuciosamente em cada fase. Aplicação prática direto no campo de batalha, sem rodeios ou teorias genéricas.
                     </p>
                 </div>
             </div>
 
             <!-- Card 3 -->
-            <div class="group relative p-6 rounded-sm glass-strong border border-white/5 transition-all duration-300 hover:border-brand-primary/30 hover:bg-white/[0.04] flex flex-col justify-between">
+            <div class="group relative p-6 rounded-sm module-card transition-all duration-300 hover:border-white/20 flex flex-col justify-between">
                 <div>
-                    <div class="w-12 h-12 rounded-sm bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center mb-5 text-brand-primary transition-all duration-300 group-hover:bg-brand-primary group-hover:text-brand-onPrimary group-hover:shadow-[0_0_20px_rgba(255,204,41,0.4)]">
+                    <div class="module-icon w-12 h-12 rounded-sm flex items-center justify-center mb-5">
                         <i class="fas fa-person text-base"></i>
                     </div>
-                    <h3 class="font-display text-white font-black text-base mb-3 tracking-tight group-hover:text-brand-primary transition-colors">
+                    <h3 class="font-display text-white font-black text-base mb-3 tracking-tight">
                         Biomecânica do corpo feminino
                     </h3>
-                    <p class="text-brand-textSecondary text-sm leading-relaxed font-medium">
+                    <p class="text-white text-sm leading-relaxed font-medium">
                         Os desvios posturais e assimetrias mecânicas mais comuns em mulheres, compreendendo as razões estruturais pelas quais acontecem e o impacto direto no resultado estético.
                     </p>
                 </div>
             </div>
 
             <!-- Card 4 -->
-            <div class="group relative p-6 rounded-sm glass-strong border border-white/5 transition-all duration-300 hover:border-brand-teal/40 hover:bg-white/[0.04] flex flex-col justify-between">
+            <div class="group relative p-6 rounded-sm module-card transition-all duration-300 hover:border-white/20 flex flex-col justify-between">
                 <div>
-                    <div class="w-12 h-12 rounded-sm bg-brand-teal/20 border border-brand-teal/40 flex items-center justify-center mb-5 text-brand-lilac transition-all duration-300 group-hover:bg-brand-teal group-hover:text-white group-hover:shadow-[0_0_20px_rgba(36,56,57,0.6)]">
+                    <div class="module-icon w-12 h-12 rounded-sm flex items-center justify-center mb-5">
                         <i class="fas fa-dumbbell text-base"></i>
                     </div>
-                    <h3 class="font-display text-white font-black text-base mb-3 tracking-tight group-hover:text-brand-primary transition-colors">
+                    <h3 class="font-display text-white font-black text-base mb-3 tracking-tight">
                         Leitura na máquina, ao vivo
                     </h3>
-                    <p class="text-brand-textSecondary text-sm leading-relaxed font-medium">
+                    <p class="text-white text-sm leading-relaxed font-medium">
                         Prática guiada com os professores, identificando desvios biomecânicos em tempo real, direto na execução, com feedback ao vivo.
                     </p>
                 </div>
             </div>
 
             <!-- Card 5 -->
-            <div class="group relative p-6 rounded-sm glass-strong border border-white/5 transition-all duration-300 hover:border-brand-lilac/30 hover:bg-white/[0.04] flex flex-col justify-between">
+            <div class="group relative p-6 rounded-sm module-card transition-all duration-300 hover:border-white/20 flex flex-col justify-between">
                 <div>
-                    <div class="w-12 h-12 rounded-sm bg-brand-lilac/10 border border-brand-lilac/25 flex items-center justify-center mb-5 text-brand-lilac transition-all duration-300 group-hover:bg-brand-lilac group-hover:text-white group-hover:shadow-[0_0_20px_rgba(0,151,57,0.4)]">
+                    <div class="module-icon w-12 h-12 rounded-sm flex items-center justify-center mb-5">
                         <i class="fas fa-microscope text-base"></i>
                     </div>
-                    <h3 class="font-display text-white font-black text-base mb-3 tracking-tight group-hover:text-brand-primary transition-colors">
+                    <h3 class="font-display text-white font-black text-base mb-3 tracking-tight">
                         Casos reais com diagnóstico ao vivo
                     </h3>
-                    <p class="text-brand-textSecondary text-sm leading-relaxed font-medium">
+                    <p class="text-white text-sm leading-relaxed font-medium">
                         Análise de alunas que não evoluíam e o que mudou na prescrição, com o raciocínio clínico completo apresentado de forma transparente.
                     </p>
                 </div>
             </div>
 
             <!-- Card 6 -->
-            <div class="group relative p-6 rounded-sm glass-strong border border-white/5 transition-all duration-300 hover:border-brand-primary/30 hover:bg-white/[0.04] flex flex-col justify-between">
+            <div class="group relative p-6 rounded-sm module-card transition-all duration-300 hover:border-white/20 flex flex-col justify-between">
                 <div>
-                    <div class="w-12 h-12 rounded-sm bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center mb-5 text-brand-primary transition-all duration-300 group-hover:bg-brand-primary group-hover:text-brand-onPrimary group-hover:shadow-[0_0_20px_rgba(255,204,41,0.4)]">
+                    <div class="module-icon w-12 h-12 rounded-sm flex items-center justify-center mb-5">
                         <i class="fas fa-clipboard-list text-base"></i>
                     </div>
-                    <h3 class="font-display text-white font-black text-base mb-3 tracking-tight group-hover:text-brand-primary transition-colors">
+                    <h3 class="font-display text-white font-black text-base mb-3 tracking-tight">
                         Construção de treino do zero
                     </h3>
-                    <p class="text-brand-textSecondary text-sm leading-relaxed font-medium">
+                    <p class="text-white text-sm leading-relaxed font-medium">
                         Prescrição ao vivo para uma aluna real, com cada decisão justificada passo a passo pelos mentores.
                     </p>
                 </div>
@@ -1169,10 +1256,9 @@
         <!-- Botão de Chamada para Ação com Efeito Shimmer -->
         <div class="text-center" data-aos="fade-up" data-aos-delay="200">
             <button type="button" onclick="abrirPopup()"
-                class="group relative w-full sm:w-auto inline-flex bg-brand-primary hover:bg-brand-primaryHover text-brand-onPrimary font-black uppercase tracking-wider py-5 px-12 rounded-sm transition-all duration-300 shadow-[0_12px_40px_rgba(255,204,41,0.4)] hover:shadow-[0_15px_50px_rgba(255,204,41,0.65)] hover:-translate-y-1 items-center justify-center gap-3 border-0 text-sm md:text-base cursor-pointer overflow-hidden">
-                <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
-                <span>QUERO ACESSO A ESSE CONTEÚDO</span> 
-                <i class="fas fa-arrow-right text-sm transition-transform duration-300 group-hover:translate-x-1"></i>
+                class="module-btn group relative w-full sm:w-auto inline-flex bg-brand-bgMid hover:bg-brand-hero text-white font-black uppercase tracking-wider py-5 px-12 rounded-sm transition-all duration-300 shadow-[0_12px_40px_rgba(0,11,46,0.25)] hover:shadow-[0_15px_50px_rgba(0,11,46,0.35)] hover:-translate-y-1 items-center justify-center gap-3 border border-white/20 text-sm md:text-base cursor-pointer overflow-hidden">
+                <span class="text-white">QUERO ACESSO A ESSE CONTEÚDO</span> 
+                <i class="fas fa-arrow-right text-white text-sm transition-transform duration-300 group-hover:translate-x-1"></i>
             </button>
         </div>
         
@@ -1226,7 +1312,7 @@
     </section>
 
 <!-- 12 — FAQ -->
-<section id="faq" class="py-24 section-mid border-y border-white/5 relative overflow-hidden">
+<section id="faq" class="py-24 relative overflow-hidden section-light">
     <!-- Detalhe de fundo para quebrar a monotonia -->
     <div class="absolute bottom-0 right-0 w-[300px] h-[300px] bg-brand-primary/5 rounded-full blur-[100px] pointer-events-none"></div>
 
